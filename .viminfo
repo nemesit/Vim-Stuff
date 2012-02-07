@@ -8,329 +8,198 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0/\<4\>
+~MSle0~/tab
 
 # Last Substitute Search Pattern:
-~MSle0~&stimmt genau stimmt nicht
+~MSle0&return
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q!
 :q
-:%s/stimmt genau stimmt nicht//g
-:'<,'>"+y
-:set clipboard=unnamed
-:+yy
+:split
+:vsplit
 :w
-:gg"*yG
-:*yG
-:%y*
-:%y *
-:%s/nicht//g
-:%Y *
-:%s/genau//g
-:%s/stimmt//gc
-:split .bash_aliases
-:e ~/.bash_aliases
-:s
-:split Development/workspace/SharedClassesRendering/include/RenderPDU.h
-:split Development/workspace/SharedClassesRendering/include/RenderPDU
+:NERDTReeFind
+:help backspace
+:verbose imap ^?
+:verbose imap <DEL>
+:verbose imap 8
+:verbose imap ^H
+:verbose imap <BS>
+:NERDTreeToggle
+:NERDTree
+:e test.txt
+:q!
+:source ~/.vim/plugin/smartusline.vim
+:.,.+1q
+:e ~/.vimrc
+:'<,'>q
+:so %
 
 # Search String History (newest to oldest):
-? stimmt genau stimmt nicht
-? \<4\>
-? nicht
-? genau
-? stimmt
-?/looks
-?/CC
-? \<export\>
-?/g++
-? \<f\>
-? usr
-? ${MYFOLDER}
-?/__LITTLE
-?/LSUI
-?/LS
-?/True
-?/true
-? RServer
-? 0xException
-?/USB_INCLUDE
+?/tab
+? \<hello\>
+?/plugin
+?/indent
+?/statusline
+?/split
+?/g:
+?/.
+?/snippet\ .
+?/snippet .
+? ^\s*$
+?/cmd_p
+? \<ausgegeben\>
+? \/\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\/
+?/log
+?/wer
+?/Impulser
+?/Impuls
+?/W_pot
+?/Wpot
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@emph
+@Strong
+@strong
+@div
+@em
 
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	4. Veranstalter
-	4.1 Die Veranstalter gestalten das Projekt interessant
-	und lebendig.
-	
-	4.2 Die Veranstalter wirken gut vorbereitet. 
-	4.3 Die Veranstalter ermutigen, Fragen zu stellen,
-	und machen das Projekt interaktiv.
-	
-	4.4 Die Veranstalter bemuÌˆhen sich darum, eine gute
-	Veranstaltung zu halten.
-	
-	4.5 Die Suche nach ProblemlÃ¶sungen wurde durch
-	die Veranstalter sehr gut unterstuÌˆtzt.
-	
-	4.6 Die individuelle Betreuung war sehr gut. 
-	5. Fazit
-	5.1 Das Klima in der Veranstaltung war sehr
-	angenehm.
-	
-	5.2 Ich habe sehr viel uÌˆber das Thema des Projektes
-	gelernt.
-	
-	5.3 Ich habe sehr viel uÌˆber Techniken des
-	wissenschaftlichen Arbeitens gelernt.
-	
-	Die Arbeit in diesem Projekt hat bei mir folgende FÃ¤higkeiten besonders gefÃ¶rdert:
-	5.4 Kommunikation 
-	5.5 TeamfÃ¤higkeit 
-	5.6 Zeitmanagement 
-	5.7 EntscheidungsfÃ¤higkeit 
-	5.8 Konstruktiver Umgang mit Konfllikten 
-	5.9 Konzeptionelles Arbeiten 
-	5.10 Ergebnisse prÃ¤sentieren 
-	5.11 Insgesamt hat mir die Veranstaltung sehr gut
-	gefallen.
-	
-	5.12 Ich habe folgende VerbesserungsvorschlÃ¤ge fuÌˆr zukuÌˆnftige Projekte Ã¤hnlicher Art:
-"1	LINE	0
-	Feedback zu Projekten
-"2	LINE	0
-	ï¿¼ï¿¼ï¿¼Feedback zu Projekten
-"3	LINE	0
-				[ 1/269 color rgb <141/255, 83/255, 46/255>]
-				[ÃŠ 2/269 color rgb <177/255, 86/255, 41/255>]
-"4	LINE	0
-	#export PS1='\[\033]0;\w\007\]\h:\W \u\$'
-"5	LINE	0
-	#include <GLUT/glut.h>
-"6	LINE	0
-	#endif
-	
-"7	LINE	0
-	#include <GL/glx.h>
-"8	LINE	0
-	#include <GL/glext.h>
-"9	LINE	0
-	#include <GL/glut.h>
+"0	LINE	0
+	test
+""1	CHAR	0
+	"
+"2	CHAR	0
+	d
+"3	CHAR	0
+	"
+"4	CHAR	0
+	d
+"5	CHAR	0
+	#
+"6	CHAR	0
+	"
+"7	CHAR	0
+	"
+"8	CHAR	0
+	"
+"9	CHAR	0
+	"
 "a	CHAR	0
 	aaaq€kb€kb€kb€kb
+"q	CHAR	0
+	Qv€kb€kb€kb€kb€kb€kb€kb€kblslslslslsvisual
+"u	CHAR	0
+	itc€kb€kb€kb€kb
 "-	CHAR	0
-	ÃŠ
+	ficken
 
 # File marks:
-'0  1  0  ~/Documents/test.txt
-'1  76  0  ~/.vimrc
-'2  133  19  ~/Documents/Development/Povtest/test2.pov
-'3  4361  0  ~/Downloads/povray-3.7.0.RC3/configure
-'4  1  0  ~/Downloads/boost_1_47_0/bootstrap.sh
-'5  1  0  ~/Downloads/boost_1_47_0/INSTALL
-'6  2  107  ~/.bash_profile
-'7  1  0  ~/.bash_
-'8  3  0  ~/.bash_profile
-'9  8  0  ~/.bash_aliases
+'M  53  21  ~/Documents/PhysikI.txt
+'N  471  8  ~/Documents/PhysikI.txt
+'0  29  0  ~/wings_crash.dump
+'1  114  14  ~/.vimrc
+'2  24  0  ~/.vimrc
+'3  112  0  ~/.vimrc
+'4  113  0  ~/.vimrc
+'5  49  38  ~/.vimrc
+'6  116  10  ~/.vimrc
+'7  104  0  ~/.vimrc
+'8  117  29  ~/.vimrc
+'9  118  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  1  0  ~/Documents/test.txt
--'  36  0  ~/Documents/test.txt
--'  37  89  ~/Documents/test.txt
--'  42  0  ~/Documents/test.txt
--'  63  2  ~/Documents/test.txt
--'  41  39  ~/Documents/test.txt
--'  38  0  ~/Documents/test.txt
--'  72  0  ~/Documents/test.txt
--'  76  0  ~/.vimrc
+-'  29  0  ~/wings_crash.dump
+-'  1  0  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/wings_crash.dump
+-'  116  14  ~/.vimrc
+-'  113  13  ~/.vimrc
+-'  34  12  ~/.vimrc
+-'  37  0  ~/.vimrc
+-'  38  0  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  70  58  ~/Documents/test.txt
--'  71  0  ~/Documents/test.txt
--'  40  0  ~/Documents/test.txt
--'  133  19  ~/Documents/Development/Povtest/test2.pov
--'  83  10  ~/Documents/Development/Povtest/test2.pov
--'  51  3  ~/Documents/Development/Povtest/test2.pov
--'  48  3  ~/Documents/Development/Povtest/test2.pov
--'  1  0  ~/Documents/Development/Povtest/test2.pov
--'  4361  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  4351  15  ~/Downloads/povray-3.7.0.RC3/configure
--'  4342  18  ~/Downloads/povray-3.7.0.RC3/configure
--'  4341  15  ~/Downloads/povray-3.7.0.RC3/configure
--'  4338  22  ~/Downloads/povray-3.7.0.RC3/configure
--'  4331  10  ~/Downloads/povray-3.7.0.RC3/configure
--'  4330  13  ~/Downloads/povray-3.7.0.RC3/configure
--'  2862  24  ~/Downloads/povray-3.7.0.RC3/configure
--'  2858  48  ~/Downloads/povray-3.7.0.RC3/configure
--'  2855  13  ~/Downloads/povray-3.7.0.RC3/configure
--'  2850  54  ~/Downloads/povray-3.7.0.RC3/configure
--'  2849  22  ~/Downloads/povray-3.7.0.RC3/configure
--'  2792  10  ~/Downloads/povray-3.7.0.RC3/configure
--'  2791  13  ~/Downloads/povray-3.7.0.RC3/configure
--'  2410  58  ~/Downloads/povray-3.7.0.RC3/configure
--'  2409  17  ~/Downloads/povray-3.7.0.RC3/configure
--'  2111  58  ~/Downloads/povray-3.7.0.RC3/configure
--'  2110  17  ~/Downloads/povray-3.7.0.RC3/configure
--'  1444  2  ~/Downloads/povray-3.7.0.RC3/configure
--'  1310  39  ~/Downloads/povray-3.7.0.RC3/configure
--'  762  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  754  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  641  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  637  6  ~/Downloads/povray-3.7.0.RC3/configure
--'  628  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  627  11  ~/Downloads/povray-3.7.0.RC3/configure
--'  626  11  ~/Downloads/povray-3.7.0.RC3/configure
--'  622  2  ~/Downloads/povray-3.7.0.RC3/configure
--'  102  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  1  0  ~/Downloads/povray-3.7.0.RC3/configure
--'  1  0  ~/Downloads/boost_1_47_0/bootstrap.sh
--'  1  0  ~/Downloads/boost_1_47_0/INSTALL
--'  2  107  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  1  0  ~/.bash_
--'  3  0  ~/.bash_profile
--'  8  0  ~/.bash_aliases
--'  1  0  ~/.bash_aliases
--'  6  0  ~/.bash_profile
--'  10  0  ~/.bash_aliases
--'  5  21  ~/.bash_aliases
--'  3  4  ~/.bash_aliases
--'  9  0  ~/.bash_profile
--'  1  0  ~/Documents/Development/workspace/Client/src/Main.cpp
--'  212  2  ~/Documents/Development/workspace/Client/src/Main.cpp
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/include/Codec_NULL.h
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/src/Codec_NULL.cpp
--'  7  29  ~/Documents/Development/workspace/SharedClassesRendering/Debug/objects.mk
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/Debug/objects.mk
--'  48  54  ~/Documents/Development/workspace/SharedClassesRendering/Debug/makefile
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/Debug/makefile
--'  140  2  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/subdir.mk
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/subdir.mk
--'  141  302  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/subdir.mk
--'  51  11  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/cmd/subdir.mk
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/cmd/subdir.mk
--'  72  11  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/pdu/subdir.mk
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/pdu/subdir.mk
--'  1  0  ~/Documents/Development/workspace/SharedClassesRendering/include/RendererDummy.h
--'  3  1  ~/Documents/notCompiling
--'  1  0  ~/Documents/notCompiling
--'  1  0  ~/Documents/compilingwithouterror
--'  1  0  ~/Documents/Development/workspace/Client/Debug/makefile
--'  1  0  ~/Documents/Development/workspace/0xGLX/GLContext_glx.cpp
--'  11  21  ~/Documents/Development/workspace/SharedClassesRendering/include/RenderConfig.h
--'  76  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  133  19  ~/Documents/Development/Povtest/test2.pov
--'  83  10  ~/Documents/Development/Povtest/test2.pov
--'  51  3  ~/Documents/Development/Povtest/test2.pov
+-'  114  14  ~/.vimrc
+-'  24  0  ~/.vimrc
+-'  112  0  ~/.vimrc
+-'  117  11  ~/.vimrc
+-'  49  38  ~/.vimrc
+-'  2  0  ~/.vimrc
+-'  104  0  ~/.vimrc
+-'  118  0  ~/.vimrc
+-'  4  0  ~/.vimrc
+-'  278  1  ~/NERD_tree_1
+-'  307  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  1  0  ~/test.txt
+-'  20  33  ~/.vimrc
+-'  9  4  ~/.vimrc
+-'  119  0  ~/.vimrc
+-'  1  0  ~/Downloads/vim73/README.txt.info
+-'  113  0  ~/Downloads/vim73/README.txt
+-'  1  0  ~/Downloads/vim73/README.txt
+-'  1  0  ~/Downloads/vim73/README_unix.txt
+-'  8  0  ~/Downloads/vim73/README_mac.txt
+-'  1  0  ~/Downloads/vim73/README_mac.txt
+-'  104  0  ~/Downloads/vim73/README.txt
+-'  49  0  ~/Downloads/vim73/README.txt
+-'  1  0  ~/test
+-'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  195  0  ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
+-'  2  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+-'  4  0  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  21  0  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  1  0  ~/Documents/Development/CodeRunner/test1/Debug/test.c
+-'  1  10  ~/Documents/Development/CodeRunner/-MiniBufExplorer-
+-'  2  0  ~/Documents/Development/CodeRunner/-MiniBufExplorer-
+-'  2  4  ~/test
+-'  3  2  ~/.vimrc
+-'  12  0  ~/test
+-'  120  26  ~/.vimrc
+-'  17  14  ~/.vimrc
+-'  15  11  ~/.vimrc
+-'  19  0  ~/.vimrc
+-'  16  6  ~/.vimrc
+-'  13  11  ~/.vimrc
+-'  78  26  ~/.vim/plugin/smartusline.vim
+-'  79  0  ~/.vim/plugin/smartusline.vim
+-'  1  0  ~/.vim/plugin/smartusline.vim
+-'  1  0  ~/Documents/Development/vim/SmartusLine/README
+-'  101  0  ~/.vim/plugin/smartusline.vim
+-'  89  0  ~/.vim/plugin/minibufexpl.vim
+-'  71  0  ~/.vim/plugin/minibufexpl.vim
+-'  1  0  ~/.vim/plugin/minibufexpl.vim
+-'  5  0  ~/.vimrc
+-'  6  0  ~/.vimrc
+-'  1  0  ~/Documents/Development/test.cpp
+-'  113  0  ~/.vim/snippets/c.snippets
+-'  36  4  ~/.vim/snippets/c.snippets
+-'  1  0  ~/test.txt
+-'  74  21  ~/.vimrc
+-'  67  0  ~/.vimrc
+-'  73  56  ~/.vimrc
+-'  1  0  ~/Downloads/vim73/README.txt.info
+-'  113  0  ~/Downloads/vim73/README.txt
+-'  1  0  ~/Downloads/vim73/README.txt
+-'  1  0  ~/Downloads/vim73/README_unix.txt
+-'  8  0  ~/Downloads/vim73/README_mac.txt
+-'  1  0  ~/Downloads/vim73/README_mac.txt
+-'  104  0  ~/Downloads/vim73/README.txt
 
 # History of marks within files (newest to oldest):
 
-> ~/Documents/test.txt
-	"	1	0
-	^	37	91
-	.	1	0
-	+	72	90
-	+	1	0
-	+	70	49
-	+	40	0
-	+	41	0
-	+	44	0
-	+	47	0
-	+	50	0
-	+	51	0
-	+	55	0
-	+	58	0
-	+	61	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	67	0
-	+	68	0
-	+	69	0
-	+	71	0
-	+	40	0
-	+	40	0
-	+	37	90
-	+	4	0
-	+	1	0
-
-> ~/Documents/Auswertung.txt
-	"	36	0
-	^	37	19
-	.	78	16
-	+	4	33
-	+	48	18
-	+	7	16
-	+	48	57
-	+	7	56
-	+	50	44
-	+	82	2
-	+	81	2
-	+	1	2
-	+	83	3
-	+	82	3
-	+	83	52
-	+	4	55
-	+	10	47
-	+	11	51
-	+	12	0
-	+	13	5
-	+	51	3
-	+	52	52
-	+	55	0
-	+	16	23
-	+	58	62
-	+	60	3
-	+	18	26
-	+	20	21
-	+	21	30
-	+	64	0
-	+	60	27
-	+	63	26
-	+	26	0
-	+	24	7
-	+	23	7
-	+	25	25
-	+	67	19
-	+	32	0
-	+	28	3
-	+	27	7
-	+	28	29
-	+	83	29
-	+	31	21
-	+	71	57
-	+	35	46
-	+	79	0
-	+	75	7
-	+	40	10
-	+	75	54
-	+	42	55
-	+	44	27
-	+	77	66
-	+	78	16
-
 > ~/.vimrc
-	"	76	0
-	^	76	0
-	.	76	0
-	+	1	19
-	+	1	17
-	+	1	2
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
+	"	24	6
+	.	116	0
 	+	1	0
 	+	1	0
 	+	1	0
@@ -339,50 +208,444 @@ $
 	+	1	11
 	+	1	0
 	+	1	20
-	+	85	0
+	+	121	0
 	+	2	0
-	+	25	12
-	+	25	17
+	+	20	24
+	+	20	29
 	+	1	3
-	+	26	0
-	+	33	31
-	+	34	25
-	+	33	11
-	+	35	12
-	+	25	12
-	+	27	0
-	+	25	21
-	+	76	0
+	+	20	12
+	+	20	43
+	+	20	37
+	+	20	23
+	+	20	24
+	+	20	24
+	+	20	12
+	+	20	33
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	62
+	+	20	58
+	+	20	41
+	+	20	25
+	+	20	28
+	+	20	38
+	+	20	39
+	+	20	12
+	+	20	57
+	+	20	55
+	+	15	11
+	+	15	0
+	+	13	11
+	+	20	29
+	+	20	52
+	+	20	16
+	+	120	0
+	+	16	33
+	+	17	18
+	+	18	17
+	+	20	0
+	+	18	18
+	+	20	30
+	+	20	12
+	+	120	0
+	+	20	30
+	+	120	0
+	+	120	0
+	+	120	0
+	+	17	0
+	+	120	0
+	+	20	12
+	+	20	12
+	+	2	42
+	+	20	12
+	+	20	12
+	+	119	0
+	+	116	17
+	+	119	0
+	+	119	0
+	+	119	0
+	+	119	0
+	+	20	0
+	+	25	0
+	+	35	17
+	+	36	11
+	+	119	0
+	+	117	29
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	105	0
+	+	104	0
+	+	111	0
+	+	110	0
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	105	0
+	+	104	0
+	+	113	0
+	+	112	0
+	+	113	0
+	+	24	0
+	+	116	12
+	+	114	14
+	+	116	13
+	+	114	19
+	+	116	0
 
-> ~/Documents/Development/Povtest/test2.pov
-	"	133	19
-	^	133	20
-	.	133	19
-	+	48	4
-	+	51	0
-	+	49	0
-	+	50	4
-	+	51	4
-	+	52	4
-	+	53	4
-	+	133	19
+> /usr/local/share/vim/vim73/doc/intro.txt
+	"	770	0
 
-> ~/Downloads/povray-3.7.0.RC3/configure
-	"	4361	0
+> ~/NERD_tree_1
+	"	40	11
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
 
-> ~/Downloads/boost_1_47_0/bootstrap.sh
+> ~/-MiniBufExplorer-
 	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
-> ~/Downloads/boost_1_47_0/INSTALL
+> ~/wings_crash.dump
+	"	29	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+	"	1	0
+
+> ~/test.txt
+	"	1	0
+
+> ~/Documents/Development/vim/iTerm2/test
+	"	3	0
+	.	3	0
+	+	3	0
+
+> ~/Documents/Development/latestDSVR/Client/src/GUI_Gtkmm.cpp
+	"	35	0
+
+> ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
+	"	97	0
+
+> ~/Downloads/gist1109948-4b8089314e659afa69ec7737498c4147fab39f80/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/Downloads/vim73/README.txt.info
+	"	1	0
+
+> ~/Downloads/vim73/README.txt
+	"	113	0
+	^	49	0
+	.	49	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	49	0
+
+> ~/Downloads/vim73/README_unix.txt
+	"	1	0
+
+> ~/Downloads/vim73/README_mac.txt
+	"	8	0
+
+> ~/test
+	"	1	0
+	.	2	0
+	+	2	19
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	2	11
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	9
+	+	2	8
+	+	2	8
+	+	2	6
+	+	1	0
+	+	2	0
+
+> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+	"	13	0
+	^	34	29
+	.	34	28
+	+	34	28
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
+	"	82	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+	"	11	0
+	.	3	0
+	+	3	0
+	b	3	0
+	e	9	38
+	m	7	0
+
+> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+	"	1	96
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Desktop/04-PDE/displaymatrix.c
+	"	1	0
+	.	30	0
+	+	30	0
+
+> ~/Documents/Development/test.cpp
+	"	3	1
+	^	15	1
+	.	15	1
+	+	15	0
+	+	15	1
+
+> ~/Documents/Development/CodeRunner/test1/Debug/test.c
+	"	1	0
+
+> ~/Documents/Development/CodeRunner/test2/Debug/test.c
+	"	1	0
+
+> ~/Documents/Development/CodeRunner/-MiniBufExplorer-
+	"	1	10
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/help
+	"	1	0
+
+> ~/.vim/plugin/smartusline.vim
+	"	78	26
+
+> ~/Documents/Development/vim/SmartusLine/README
+	"	1	0
+	^	10	0
+	.	7	9
+	+	1	0
+	+	4	0
+	+	7	9
+	b	13	0
+
+> ~/.vim/plugin/minibufexpl.vim
+	"	89	0
+
+> ~/.vim/plugin/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/.vim/syntax/logos.vim
+	"	1	0
+
+> ~/.vim/ftplugin/logos.vim
+	"	1	0
+
+> ~/Documents/Development/vim/SmartusLine/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/.vim/snippets/c.snippets
+	"	113	0
+	^	113	1
+	.	113	0
+	+	112	0
+	+	113	0
+
+> ~/Documents/Development/vim/snipmate.vim/plugin-info.txt
+	"	1	0
+
+> ~/Documents/Development/vim/snipmate.vim/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/vim/snipmate.vim/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/vim/supertab/supertab.vba
+	"	1	0
+
+> ~/.vim/.VimballRecord
+	"	2	0
+
+> ~/Documents/Development/mineobj/go/src/cmd/gc/sinit.c
+	"	404	6
+
+> ~/Documents/Development/mineobj/go/src/cmd/gc/subr.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/personal/amoe/emacs/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/tags/projectM-2.0.0/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/tags/projectM-2.0.0/src/macos/FTGL/freetype src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/trunk/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/trunk/src/macos/FTGL/freetype src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/projectm/projectm/trunk-old/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
+	"	1	0
+
+> ~/Documents/Development/stuff/vim/vim/src/eval.c
+	"	1	0
+
+> ~/Downloads/libpng-1.5.5/pngmem.c
+	"	1	0
+
+> ~/Documents/Development/OSXTweaks/trunk/documents.txt
+	"	1	0
+
+> ~/myssession.vim
+	"	556	0
+
+> ~/Documents/Development/latestDSVR/NERD_tree_1
+	"	19	6
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
+	"	1	0
+
+> ~/Downloads/autoconf-2.68/README
+	"	29	0
+
+> ~/Documents/Development/OSXTweaks/trunk/todo.txt
 	"	1	0
 
 > ~/.bash_profile
-	"	2	107
-	^	2	108
-	.	2	107
+	"	29	42
+	^	29	43
+	.	29	42
 	+	1	84
 	+	1	0
 	+	1	29
@@ -390,631 +653,360 @@ $
 	+	1	26
 	+	1	29
 	+	1	30
-	+	6	38
-	+	12	0
-	+	7	0
-	+	8	0
-	+	6	0
+	+	16	38
+	+	22	0
+	+	17	0
+	+	18	0
+	+	16	0
 	+	2	0
 	+	1	1
 	+	2	0
-	+	5	0
+	+	15	0
 	+	2	93
 	+	2	93
-	+	2	107
+	+	2	0
+	+	12	10
+	+	9	20
+	+	13	0
+	+	11	72
+	+	12	9
+	+	13	25
+	+	12	0
+	+	11	0
+	+	13	87
+	+	4	10
+	+	5	8
+	+	6	10
+	+	7	9
+	+	8	9
+	+	9	15
+	+	11	0
+	+	12	0
+	+	13	0
+	+	4	12
+	+	5	7
+	+	6	13
+	+	7	11
+	+	8	11
+	+	9	17
+	+	11	47
+	+	13	0
+	+	13	0
+	+	12	0
+	+	10	10
+	+	3	17
+	+	35	22
+	+	36	38
+	+	37	24
+	+	36	7
+	+	40	27
+	+	30	0
+	+	29	42
 
-> ~/.bash_
+> ~/Documents/Development/OSXTweaks/trunk/ltmain.sh
+	"	167	0
+
+> ~/Documents/Development/OSXTweaks/trunk/Bridge.sh
+	"	30	0
+
+> ~/Documents/Development/OSXTweaks/trunk/Filter.sh
 	"	1	0
+
+> ~/Documents/Development/latestDSVR/0xFileIO/src/FileIO.cpp
+	"	79	0
+
+> ~/Documents/Development/latestDSVR/0xFileIO/src/NERD_tree_1
+	"	5	1
+	.	1	0
+	+	1	0
+
+> ~/.bash_history
+	"	357	0
+
+> ~/Documents/Development/nemesit/iris/Tweak.xm
+	"	1	0
+
+> ~/NERD_tree_2
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/NERD_tree_3
+	"	83	1
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.vim/plugin/NERD_tree.vim
+	"	119	0
+
+> ~/.vim/doc/NERD_tree.txt
+	"	1256	0
+
+> ~/.vim/nerdtree_plugin/fs_menu.vim
+	"	196	0
+
+> ~/.vim/nerdtree_plugin/exec_menuitem.vim
+	"	34	0
+
+> ~/Documents/vim-surround/README.markdown
+	"	96	0
+	.	96	0
+	+	96	0
+
+> ~/Documents/uebung.tex
+	"	40	4
+	^	40	1
+	.	40	0
+	+	40	0
+	m	40	4
+
+> ~/.vim/doc/surround.txt
+	"	11	48
+
+> ~/Documents/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.bash_aliases
-	"	8	0
-	^	10	0
-	.	9	22
-	+	3	49
-	+	1	3
-	+	2	0
-	+	1	1
-	+	3	30
-	+	4	17
-	+	3	31
-	+	5	0
-	+	4	0
-	+	5	0
-	+	4	0
-	+	5	21
-	+	3	0
-	+	5	38
-	+	9	22
-
-> ~/Documents/Development/workspace/Client/src/Main.cpp
 	"	1	0
 
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/objects.mk
-	"	6	0
-	^	6	0
-	.	7	67
-	+	7	67
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/makefile
-	"	48	53
-	^	48	54
-	.	48	54
-	+	48	104
-	+	48	104
-	+	48	54
-
-> ~/Documents/Development/workspace/Client/include/GL_Widget.h
-	"	5	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/Debug/makefile
-	"	1	1
-	^	58	2
-	.	58	1
-	+	47	115
-	+	47	115
-	+	47	115
-	+	47	38
-	+	58	1
-
-> ~/Documents/Development/workspace/SharedClassesCommon/Debug/objects.mk
-	"	7	0
-	^	8	1
-	.	1	0
-	+	8	0
-	+	7	189
-	+	7	110
-	+	7	60
-	+	1	0
-
-> ~/Documents/Development/workspace/Client/src/GUI_Gtkmm.cpp
-	"	5	1
-
-> ~/.bash_profile.swp
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/Codec.h
+> ~/Desktop/04-PDE/askparams.c
 	"	4	0
 
-> ~/Documents/Development/workspace/SharedClassesRendering/src/Codec.cpp
-	"	5	60
-	^	5	61
-	.	5	60
-	+	4	23
-	+	5	33
-	+	2	17
-	+	3	61
-	+	4	60
-	+	5	60
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/Codec_NULL.h
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/subdir.mk
-	"	145	0
-	^	141	90
-	.	141	39
-	+	141	0
-	+	140	1
-	+	141	234
-	+	141	39
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/RenderConfig.h
+> ~/Desktop/04-PDE/partdiff-seq.h
 	"	11	0
-	^	10	14
-	.	10	14
-	+	9	41
+
+> ~/Desktop/04-PDE/partdiff-seq.c
+	"	60	41
+	.	61	0
+	+	61	0
+
+> ~/.git/logs/HEAD
+	"	1	0
+
+> ~/Downloads/Modern-Perl-1.20120130/README
+	"	1	0
+
+> ~/Documents/PhysikI2.txt
+	"	49	0
+	^	49	0
+	.	49	0
+	+	6	11
+	+	5	14
+	+	4	12
+	+	2	75
+	+	7	0
+	+	8	112
 	+	9	0
-	+	9	39
-	+	15	0
-	+	14	15
 	+	13	0
-	+	17	0
-	+	16	0
-	+	9	1
-	+	10	14
-
-> ~/Documents/Development/workspace/SharedClassesRendering/src/RenderConfig.cpp
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/src/Codec_NULL.cpp
-	"	1	0
-
-> ~/Documents/Development/workspace/SServer/Debug/makefile
-	"	50	185
-
-> ~/Documents/Development/workspace/SServer/Debug/objects.mk
-	"	7	8
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/RenderPDU.h
-	"	20	0
-	^	13	23
-	.	21	0
-	+	21	0
-	+	8	25
-	+	11	41
-	+	21	0
-	+	21	0
-	+	16	0
-	+	21	0
-	+	21	0
-	+	15	0
-	+	16	0
-	+	18	0
-	+	21	0
-	+	19	0
-	+	18	1
-	+	12	0
-	+	12	0
-	+	13	22
-	+	21	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/RenderDVRFrame.h
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/cmd/subdir.mk
-	"	51	11
-	^	51	12
-	.	51	12
-	+	51	0
-	+	50	1
-	+	51	2
-	+	51	247
-	+	51	12
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/pdu/subdir.mk
-	"	72	11
-	^	72	12
-	.	72	11
-	+	72	0
-	+	71	1
-	+	72	0
-	+	72	0
-	+	72	247
-	+	72	11
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/src/subdir.mk~
-	"	141	259
-	^	141	260
-	.	141	260
-	+	141	0
-	+	140	1
-	+	141	260
-
-> ~/Documents/Development/workspace/SharedClassesRendering/Debug/sources.mk
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/RendererDummy.h
-	"	1	0
-
-> ~/Documents/notCompiling
-	"	3	1
-	^	4	0
-	.	3	61
-	+	1	5
-	+	3	61
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/Renderer.h
-	"	13	0
-	.	12	0
-	+	13	0
-	+	11	0
-	+	10	0
-	+	10	0
-	+	8	16
-	+	9	16
-	+	8	17
-	+	5	26
-	+	6	13
-	+	12	0
-
-> ~/Documents/Development/workspace/SharedClassesRendering/include/RenderPDU
-	"	1	0
-
-> ~/Documents/compilingwithouterror
-	"	1	0
-
-> ~/Documents/Development/workspace/Client/Debug/makefile
-	"	1	0
-
-> ~/Documents/Development/workspace/0xGLX/Debug/makefile
-	"	1	0
-
-> ~/Documents/Development/workspace/0xGLX/GLContext_glx.cpp
-	"	1	0
-
-> ~/Documents/Development/workspace/build
-	"	1	0
-	.	32	0
+	+	11	9
+	+	14	112
+	+	50	0
+	+	15	53
+	+	19	48
+	+	22	22
 	+	23	0
-	+	26	0
-	+	29	0
-	+	32	0
-	+	26	0
-	+	32	0
+	+	30	1
+	+	28	16
+	+	30	41
+	+	38	0
+	+	33	62
+	+	36	0
+	+	40	37
+	+	41	26
+	+	43	6
+	+	37	25
+	+	43	22
+	+	44	11
+	+	43	13
+	+	46	36
+	+	49	0
 
-> ~/Documents/Development/workspace/0xGLX/GLContext_glx.h
+> ~/.ssh/config
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	0
+	+	1	35
+
+> ~/Documents/Development/nemesit/iris/layout/DEBIAN/control
 	"	1	0
-	^	8	56
-	.	8	55
-	+	13	0
-	+	13	0
-	+	12	0
-	+	11	0
-	+	13	0
-	+	8	55
+	^	8	15
+	.	8	14
+	+	1	19
+	+	7	19
+	+	8	14
 
-> ~/Documents/Development/workspace/0xGLX/GLContext.h
-	"	1	0
+> ~/.ssh/known_hosts
+	"	7	0
+	.	8	0
+	+	3	0
+	+	8	0
 
-> ~/Documents/Development/workspace/SServer/sserver.conf
-	"	1	0
-
-> ~/Documents/Development/workspace/SServer/sserver_null.conf
-	"	1	0
-
-> ~/Documents/Development/workspace/install.sh
-	"	1	0
-
-> ~/Documents/Development/workspace/0xPThread/Debug/subdir.mk
-	"	23	43
-	^	23	44
-	.	23	43
-	+	23	37
-	+	18	0
+> ~/Documents/Development/Carcassonnehack/header/cheater/Tweak.xm
+	"	20	4
+	^	23	26
+	.	23	25
+	+	21	2
+	+	35	0
+	+	21	0
+	+	43	2
+	+	35	0
+	+	31	2
+	+	35	2
+	+	35	2
+	+	44	17
+	+	50	1
+	+	58	1
+	+	31	2
+	+	23	2
+	+	32	2
+	+	33	2
+	+	23	1
+	+	31	2
+	+	35	1
 	+	23	1
 	+	24	0
-	+	25	0
-	+	23	43
-
-> ~/Documents/Development/workspace/0xPThread/Debug/ls
-	"	1	0
-
-> ~/Documents/Development/workspace/0xPThread/Debug/makefile
-	"	1	0
-
-> ~/Documents/Development/test.cpp
-	"	4	0
-	^	5	1
-	.	1	1
-	+	57	0
-	+	1	1
-
-> ~/Documents/Development/workspace/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Development/workspace/NERD_tree_2
-	"	6	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/Debug/src/subdir.mk
-	"	294	0
-
-> ~/Documents/Development/workspace/0xPThread/Debug/objects.mk
-	"	1	0
-
-> ~/Documents/Development/workspace/install
-	"	13	0
-	^	1	51
-	.	13	0
-	+	1	10
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-
-> ~/Documents/Development/workspace/0xPThread/Thread.h
-	"	2	0
-
-> ~/Documents/Development/workspace/0xPThread/Thread.cpp
-	"	7	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/include/ExtThread.h
-	"	1	0
-	^	14	49
-	.	14	48
-	+	13	0
-	+	14	48
-
-> ~/Documents/Development/workspace/SharedClassesCommon/include/FrameFileIO.h
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/src/FrameFileIO.cpp
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/include/CmdInterpreter.h
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/src/CmdInterpreter.cpp
-	"	1	0
-
-> ~/Documents/Development/workspace/SharedClassesCommon/include/DVRFrameTCPSocketIO.h
-	"	104	36
-	^	104	37
-	.	104	36
-	+	104	36
-
-> ~/Documents/Development/workspace/SharedClassesCommon/include/DVRFrameFileIO.h
-	"	20	36
-	^	20	37
-	.	20	36
-	+	20	36
-
-> ~/Downloads/boost_1_47_0/bootstrap.log
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-3551675234
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1318183803
-	"	1	0
-
-> /Applications/Twitter.app/Contents/Info.plist
-	"	4	0
-	^	104	7
-	.	104	6
-	+	104	6
-
-> /Applications/Skype.app/Contents/Info.plist
-	"	1	32
-
-> ~/Downloads/usbmuxd-1.0.7/build/CMakeCache.txt
-	"	187	49
-	^	187	50
-	.	187	49
-	+	187	49
-
-> ~/Documents/Development/libusb/libusb/INSTALL
-	"	88	0
-
-> ~/Documents/Development/libusb/libusb/README
-	"	2	0
-
-> ~/Downloads/cmake-2.8.6/Readme.txt
-	"	44	0
-
-> ~/Documents/Development/rrzsvn/trunk/0xPThread/src/LimitedThread.cpp
-	"	1	3
-
-> ~/Documents/Development/rrzsvn/trunk/NERD_tree_1
-	"	7	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/Development/rrzsvn/trunk/0xPThread/include/LimitedThread.h
-	"	1	0
-
-> ~/Documents/Development/rrzsvn/trunk/NERD_tree_2
-	"	10	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/Development/rrzsvn/trunk/0xPThread/src/Thread.cpp
-	"	1	0
-
-> ~/Documents/Development/rrzsvn/trunk/NERD_tree_3
-	"	8	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/Development/rrzsvn/trunk/0xPThread/include/Thread.h
-	"	1	5
-
-> ~/Documents/Development/rrzsvn/trunk/NERD_tree_4
-	"	7	9
-	.	1	0
-	+	1	0
-
-> ~/Documents/vimtest.txt
-	"	5	0
-	^	1	0
-	.	5	0
-	+	2	5
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	10
-	+	2	5
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	14
-	+	4	0
-	+	3	0
-	+	1	0
-	+	4	0
-	+	5	0
-
-> /usr/share/vim/vim73/doc/help.txt
-	"	130	25
-
-> ~/Documents/Development/stuff/vim/vim/src/feature.h
-	"	1	0
-
-> ~/.vim/colors/.vimrc
-	"	1	0
-
-> ~/.vim/colors/wombat256.vim
-	"	30	0
-	^	30	0
-	.	30	0
-	+	53	0
-	+	54	0
-	+	55	0
-	+	11	0
-	+	12	0
-	+	13	0
+	+	23	19
+	+	21	2
+	+	23	2
+	+	30	0
+	+	24	2
+	+	21	1
+	+	23	7
 	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	31	0
-	+	32	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	49	0
-	+	50	0
-	+	51	0
-	+	52	0
-	+	53	0
-	+	54	0
-	+	55	0
-	+	10	0
-	+	11	0
 	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	30	0
+	+	10	32
+	+	21	16
+	+	23	18
+	+	30	21
+	+	21	25
+	+	23	28
+	+	30	25
 	+	31	0
-	+	32	0
-	+	33	0
-	+	34	0
 	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	45	0
-	+	46	0
-	+	47	0
-	+	48	0
-	+	49	0
+	+	29	0
+	+	25	13
+	+	26	5
+	+	30	2
+	+	28	20
+	+	25	16
+	+	35	1
+	+	43	1
+	+	44	16
 	+	50	0
-	+	51	0
-	+	52	0
-	+	53	0
+	+	58	0
+	+	53	70
+	+	53	71
 	+	54	0
-	+	55	0
-	+	16	0
-	+	10	1
-	+	11	2
-	+	8	0
-	+	7	0
-	+	30	0
+	+	53	71
+	+	53	71
+	+	54	0
+	+	54	0
+	+	15	22
+	+	54	12
+	+	22	0
+	+	21	2
+	+	22	5
+	+	26	20
+	+	30	1
+	+	23	25
 
-> ~/vimrc
-	"	10	9
-	^	10	10
-	.	10	10
-	+	10	10
-
-> ~/Documents/Ala Tut.tex
+> ~/Documents/Development/Carcassonnehack/header/cheater/Tweak.
 	"	1	0
 
-> ~/Documents/Ala Tut.
+> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/Makefile
 	"	1	0
+
+> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/iCheat.mm
+	"	1	0
+
+> ~/Documents/Development/nemesit/iris/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/nemesit/iris/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/nemesit/iris/sachbaerbeiter.txt
+	"	1	0
+
+> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/entry.plist
+	"	1	0
+
+> ~/.vim/filetype.vim
+	"	1	0
+	^	1	50
+	.	1	44
+	+	1	44
+
+> ~/Downloads/10-PBS-Scripte/cases
+	"	3	0
+	^	5	54
+	.	5	53
+	+	1	128
+	+	1	19
+	+	1	108
+	+	3	0
+	+	2	8
+	+	3	8
+	+	4	4
+	+	5	4
+	+	4	14
+	+	5	14
+	+	3	10
+	+	2	10
+	+	5	14
+	+	4	14
+	+	2	11
+	+	3	11
+	+	4	10
+	+	5	10
+	+	3	54
+	+	5	53
+
+> ~/Downloads/10-PBS-Scripte/TESTINGFUCKINGSCRIPT_2_3_200.job
+	"	1	0
+
+> ~/Documents/Development/DSVR/trunk/Client/src/GL_Widget_expl.cpp
+	"	166	45
+
+> ~/Downloads/Blatt2/skript.sh
+	"	26	11
+	^	26	12
+	.	26	12
+	+	27	0
+	+	26	13
+	+	26	12
+
+> ~/Downloads/tnm083-project/Makefile
+	"	3	10
+
+> ~/Downloads/tnm083-project/main.cpp
+	"	1	0
+
+> ~/Downloads/openclovermpicrapland/Makefile
+	"	18	0
+	^	18	1
+	.	18	0
+	+	16	16
+	+	29	0
+	+	20	0
+	+	22	11
+	+	32	38
+	+	9	18
+	+	28	0
+	+	18	0

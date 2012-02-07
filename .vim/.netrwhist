@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/ifukurokujo/Documents/Development/workspace/0xPThread'
+let g:netrw_dirhist_2='/Users/ifukurokujo/Documents/Development/nemesit/iris/layout'
+let g:netrw_dirhist_3='/Users/ifukurokujo/Documents/test'
+let g:netrw_dirhist_4='/Users/ifukurokujo/Documents/Development/vim/snipmate.vim/plugin'
