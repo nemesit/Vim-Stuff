@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/tab
+~MSle0~/Error
 
 # Last Substitute Search Pattern:
 ~MSle0&return
@@ -18,9 +18,17 @@ $
 
 # Command Line History (newest to oldest):
 :q
+:w
+:q!
+:marks
+:set ruler
+:1
+:so color_demo.vim
+:noway
+:hi ErrorMsg
+:ls
 :split
 :vsplit
-:w
 :NERDTReeFind
 :help backspace
 :verbose imap ^?
@@ -29,16 +37,9 @@ $
 :verbose imap ^H
 :verbose imap <BS>
 :NERDTreeToggle
-:NERDTree
-:e test.txt
-:q!
-:source ~/.vim/plugin/smartusline.vim
-:.,.+1q
-:e ~/.vimrc
-:'<,'>q
-:so %
 
 # Search String History (newest to oldest):
+?/Error
 ?/tab
 ? \<hello\>
 ?/plugin
@@ -58,7 +59,6 @@ $
 ?/Impulser
 ?/Impuls
 ?/W_pot
-?/Wpot
 
 # Expression History (newest to oldest):
 
@@ -73,23 +73,27 @@ $
 
 # Registers:
 "0	LINE	0
-	test
-""1	CHAR	0
-	"
-"2	CHAR	0
-	d
-"3	CHAR	0
-	"
-"4	CHAR	0
-	d
+	hallo wichser
+""1	LINE	0
+	hallo wichser
+"2	LINE	0
+	hallo wichser
+"3	LINE	0
+	hallo spacken
+"4	LINE	0
+	hallo spacken
 "5	CHAR	0
-	#
-"6	CHAR	0
-	"
+	r
+	
+	
+	
+	
+"6	LINE	0
+	set ruler
 "7	CHAR	0
-	"
+	5
 "8	CHAR	0
-	"
+	8
 "9	CHAR	0
 	"
 "a	CHAR	0
@@ -99,41 +103,65 @@ $
 "u	CHAR	0
 	itc€kb€kb€kb€kb
 "-	CHAR	0
-	ficken
+	8
 
 # File marks:
 'M  53  21  ~/Documents/PhysikI.txt
 'N  471  8  ~/Documents/PhysikI.txt
-'0  29  0  ~/wings_crash.dump
-'1  114  14  ~/.vimrc
-'2  24  0  ~/.vimrc
-'3  112  0  ~/.vimrc
-'4  113  0  ~/.vimrc
-'5  49  38  ~/.vimrc
-'6  116  10  ~/.vimrc
-'7  104  0  ~/.vimrc
-'8  117  29  ~/.vimrc
-'9  118  0  ~/.vimrc
+'0  35  94  ~/.bash_profile
+'1  5  0  ~/.bash_profile
+'2  4  0  ~/Documents/Development/vim/test/test
+'3  1  0  ~/Documents/Development/vim/test/test
+'4  37  0  ~/.vimrc
+'5  120  0  ~/.vimrc
+'6  1  0  ~/Documents/Development/vim/test/color_demo.vim
+'7  262  0  ~/Documents/Development/vim/test/color_demo.vim
+'8  8  3  ~/Documents/Development/vim/test/colors.py
+'9  1  0  ~/.vim/colors/wombat256.vim
 
 # Jumplist (newest first):
--'  29  0  ~/wings_crash.dump
--'  1  0  ~/-MiniBufExplorer-
--'  2  0  ~/-MiniBufExplorer-
--'  1  0  ~/wings_crash.dump
--'  116  14  ~/.vimrc
--'  113  13  ~/.vimrc
--'  34  12  ~/.vimrc
+-'  35  94  ~/.bash_profile
+-'  7  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  5  0  ~/.bash_profile
+-'  4  0  ~/Documents/Development/vim/test/test
+-'  1  0  ~/Documents/Development/vim/test/test
+-'  5  0  ~/Documents/Development/vim/test/test
 -'  37  0  ~/.vimrc
--'  38  0  ~/.vimrc
+-'  1  10  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/Documents/PhysikI.txt
 -'  1  0  ~/.vimrc
--'  114  14  ~/.vimrc
--'  24  0  ~/.vimrc
--'  112  0  ~/.vimrc
--'  117  11  ~/.vimrc
--'  49  38  ~/.vimrc
--'  2  0  ~/.vimrc
--'  104  0  ~/.vimrc
+-'  120  0  ~/.vimrc
 -'  118  0  ~/.vimrc
+-'  100  14  ~/.vimrc
+-'  1  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  257  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  262  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  8  3  ~/Documents/Development/vim/test/colors.py
+-'  1  0  ~/Documents/Development/vim/test/colors.py
+-'  1  0  ~/.vim/colors/wombat256.vim
+-'  57  40  ~/.vim/colors/wombat256.vim
+-'  5  0  ~/.vim/colors/wombat256.vim
+-'  2  0  ~/.vim/colors/wombat256.vim
+-'  3  0  ~/.vim/colors/wombat256.vim
+-'  7  0  ~/.vim/colors/wombat256.vim
+-'  19  0  ~/.vim/colors/wombat256.vim
+-'  54  29  ~/.vimrc
+-'  29  0  ~/wings_crash.dump
+-'  1  0  ~/wings_crash.dump
+-'  115  13  ~/.vimrc
+-'  34  12  ~/.vimrc
+-'  39  0  ~/.vimrc
+-'  40  0  ~/.vimrc
+-'  116  14  ~/.vimrc
+-'  24  0  ~/.vimrc
+-'  114  0  ~/.vimrc
+-'  121  11  ~/.vimrc
+-'  51  38  ~/.vimrc
+-'  2  0  ~/.vimrc
+-'  106  0  ~/.vimrc
+-'  122  0  ~/.vimrc
 -'  4  0  ~/.vimrc
 -'  278  1  ~/NERD_tree_1
 -'  307  0  ~/NERD_tree_1
@@ -141,7 +169,7 @@ $
 -'  1  0  ~/test.txt
 -'  20  33  ~/.vimrc
 -'  9  4  ~/.vimrc
--'  119  0  ~/.vimrc
+-'  123  0  ~/.vimrc
 -'  1  0  ~/Downloads/vim73/README.txt.info
 -'  113  0  ~/Downloads/vim73/README.txt
 -'  1  0  ~/Downloads/vim73/README.txt
@@ -164,51 +192,127 @@ $
 -'  2  4  ~/test
 -'  3  2  ~/.vimrc
 -'  12  0  ~/test
--'  120  26  ~/.vimrc
+-'  124  26  ~/.vimrc
 -'  17  14  ~/.vimrc
 -'  15  11  ~/.vimrc
 -'  19  0  ~/.vimrc
 -'  16  6  ~/.vimrc
--'  13  11  ~/.vimrc
--'  78  26  ~/.vim/plugin/smartusline.vim
--'  79  0  ~/.vim/plugin/smartusline.vim
--'  1  0  ~/.vim/plugin/smartusline.vim
--'  1  0  ~/Documents/Development/vim/SmartusLine/README
--'  101  0  ~/.vim/plugin/smartusline.vim
--'  89  0  ~/.vim/plugin/minibufexpl.vim
--'  71  0  ~/.vim/plugin/minibufexpl.vim
--'  1  0  ~/.vim/plugin/minibufexpl.vim
--'  5  0  ~/.vimrc
--'  6  0  ~/.vimrc
--'  1  0  ~/Documents/Development/test.cpp
--'  113  0  ~/.vim/snippets/c.snippets
--'  36  4  ~/.vim/snippets/c.snippets
--'  1  0  ~/test.txt
--'  74  21  ~/.vimrc
--'  67  0  ~/.vimrc
--'  73  56  ~/.vimrc
--'  1  0  ~/Downloads/vim73/README.txt.info
--'  113  0  ~/Downloads/vim73/README.txt
--'  1  0  ~/Downloads/vim73/README.txt
--'  1  0  ~/Downloads/vim73/README_unix.txt
--'  8  0  ~/Downloads/vim73/README_mac.txt
--'  1  0  ~/Downloads/vim73/README_mac.txt
--'  104  0  ~/Downloads/vim73/README.txt
+-'  2  0  ~/Documents/Development/vim/test/test
+-'  37  0  ~/.vimrc
+-'  1  10  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/Documents/PhysikI.txt
+-'  1  0  ~/.vimrc
+-'  120  0  ~/.vimrc
+-'  118  0  ~/.vimrc
+-'  100  14  ~/.vimrc
+-'  1  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  257  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  262  0  ~/Documents/Development/vim/test/color_demo.vim
+-'  8  3  ~/Documents/Development/vim/test/colors.py
+-'  1  0  ~/Documents/Development/vim/test/colors.py
+-'  1  0  ~/.vim/colors/wombat256.vim
+-'  57  40  ~/.vim/colors/wombat256.vim
+-'  5  0  ~/.vim/colors/wombat256.vim
+-'  2  0  ~/.vim/colors/wombat256.vim
+-'  3  0  ~/.vim/colors/wombat256.vim
+-'  7  0  ~/.vim/colors/wombat256.vim
+-'  19  0  ~/.vim/colors/wombat256.vim
+-'  54  29  ~/.vimrc
 
 # History of marks within files (newest to oldest):
 
+> ~/.bash_profile
+	"	35	94
+	^	35	95
+	.	35	94
+	+	1	84
+	+	1	0
+	+	1	29
+	+	1	29
+	+	1	26
+	+	1	29
+	+	1	30
+	+	22	38
+	+	28	0
+	+	23	0
+	+	24	0
+	+	22	0
+	+	2	0
+	+	1	1
+	+	2	0
+	+	21	0
+	+	2	93
+	+	2	93
+	+	2	0
+	+	18	10
+	+	15	20
+	+	19	0
+	+	17	72
+	+	18	9
+	+	19	25
+	+	18	0
+	+	17	0
+	+	19	87
+	+	10	10
+	+	11	8
+	+	12	10
+	+	13	9
+	+	14	9
+	+	15	15
+	+	17	0
+	+	18	0
+	+	19	0
+	+	10	12
+	+	11	7
+	+	12	13
+	+	13	11
+	+	14	11
+	+	15	17
+	+	17	47
+	+	19	0
+	+	19	0
+	+	18	0
+	+	16	10
+	+	9	17
+	+	41	22
+	+	42	38
+	+	43	24
+	+	42	7
+	+	46	27
+	+	36	0
+	+	35	42
+	+	7	0
+	+	6	10
+	+	5	58
+	+	4	0
+	+	5	0
+	+	35	94
+
+> ~/Documents/Development/vim/test/test
+	"	4	0
+	.	3	0
+	+	1	16
+	+	1	0
+	+	1	0
+	+	1	12
+	+	5	0
+	+	5	13
+	+	5	12
+	+	1	0
+	+	5	12
+	+	5	0
+	+	5	0
+	+	5	0
+	+	1	0
+	+	3	0
+	x	1	15
+
 > ~/.vimrc
-	"	24	6
-	.	116	0
-	+	1	0
-	+	1	0
-	+	1	0
+	"	37	0
+	.	120	0
 	+	1	20
-	+	1	3
-	+	1	11
-	+	1	0
-	+	1	20
-	+	121	0
+	+	125	0
 	+	2	0
 	+	20	24
 	+	20	29
@@ -245,7 +349,7 @@ $
 	+	20	29
 	+	20	52
 	+	20	16
-	+	120	0
+	+	124	0
 	+	16	33
 	+	17	18
 	+	18	17
@@ -253,53 +357,117 @@ $
 	+	18	18
 	+	20	30
 	+	20	12
-	+	120	0
+	+	124	0
 	+	20	30
-	+	120	0
-	+	120	0
-	+	120	0
+	+	124	0
+	+	124	0
+	+	124	0
 	+	17	0
-	+	120	0
+	+	124	0
 	+	20	12
 	+	20	12
 	+	2	42
 	+	20	12
 	+	20	12
-	+	119	0
-	+	116	17
-	+	119	0
-	+	119	0
-	+	119	0
-	+	119	0
+	+	123	0
+	+	118	17
+	+	123	0
+	+	123	0
+	+	123	0
+	+	123	0
 	+	20	0
 	+	25	0
 	+	35	17
 	+	36	11
-	+	119	0
-	+	117	29
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	105	0
-	+	104	0
+	+	123	0
+	+	121	29
 	+	111	0
 	+	110	0
 	+	109	0
 	+	108	0
 	+	107	0
 	+	106	0
-	+	105	0
-	+	104	0
 	+	113	0
 	+	112	0
-	+	113	0
+	+	111	0
+	+	110	0
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	115	0
+	+	114	0
+	+	115	0
 	+	24	0
-	+	116	12
-	+	114	14
-	+	116	13
-	+	114	19
-	+	116	0
+	+	118	12
+	+	116	14
+	+	118	13
+	+	116	19
+	+	118	0
+	+	31	0
+	+	31	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	119	5
+	+	120	0
+
+> ~/Documents/PhysikI.txt
+	"	40	18
+
+> ~/-MiniBufExplorer-
+	"	1	10
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/vim/test/color_demo.vim
+	"	1	0
+	^	262	1
+	.	1	0
+	+	263	0
+	+	261	1
+	+	260	1
+	+	262	1
+	+	1	0
+
+> ~/Documents/Development/vim/test/colors.py
+	"	8	3
+	^	8	4
+	.	8	3
+	+	9	0
+	+	8	3
+
+> ~/.vim/colors/wombat256.vim
+	"	1	0
+	^	57	41
+	.	57	40
+	+	58	0
+	+	57	40
+	+	2	0
+	+	57	40
 
 > /usr/local/share/vim/vim73/doc/intro.txt
 	"	770	0
@@ -346,33 +514,6 @@ $
 	+	1	0
 	+	1	0
 	+	1	0
-
-> ~/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
 > ~/wings_crash.dump
 	"	29	0
@@ -641,67 +782,6 @@ $
 
 > ~/Documents/Development/OSXTweaks/trunk/todo.txt
 	"	1	0
-
-> ~/.bash_profile
-	"	29	42
-	^	29	43
-	.	29	42
-	+	1	84
-	+	1	0
-	+	1	29
-	+	1	29
-	+	1	26
-	+	1	29
-	+	1	30
-	+	16	38
-	+	22	0
-	+	17	0
-	+	18	0
-	+	16	0
-	+	2	0
-	+	1	1
-	+	2	0
-	+	15	0
-	+	2	93
-	+	2	93
-	+	2	0
-	+	12	10
-	+	9	20
-	+	13	0
-	+	11	72
-	+	12	9
-	+	13	25
-	+	12	0
-	+	11	0
-	+	13	87
-	+	4	10
-	+	5	8
-	+	6	10
-	+	7	9
-	+	8	9
-	+	9	15
-	+	11	0
-	+	12	0
-	+	13	0
-	+	4	12
-	+	5	7
-	+	6	13
-	+	7	11
-	+	8	11
-	+	9	17
-	+	11	47
-	+	13	0
-	+	13	0
-	+	12	0
-	+	10	10
-	+	3	17
-	+	35	22
-	+	36	38
-	+	37	24
-	+	36	7
-	+	40	27
-	+	30	0
-	+	29	42
 
 > ~/Documents/Development/OSXTweaks/trunk/ltmain.sh
 	"	167	0
@@ -980,33 +1060,3 @@ $
 
 > ~/Downloads/10-PBS-Scripte/TESTINGFUCKINGSCRIPT_2_3_200.job
 	"	1	0
-
-> ~/Documents/Development/DSVR/trunk/Client/src/GL_Widget_expl.cpp
-	"	166	45
-
-> ~/Downloads/Blatt2/skript.sh
-	"	26	11
-	^	26	12
-	.	26	12
-	+	27	0
-	+	26	13
-	+	26	12
-
-> ~/Downloads/tnm083-project/Makefile
-	"	3	10
-
-> ~/Downloads/tnm083-project/main.cpp
-	"	1	0
-
-> ~/Downloads/openclovermpicrapland/Makefile
-	"	18	0
-	^	18	1
-	.	18	0
-	+	16	16
-	+	29	0
-	+	20	0
-	+	22	11
-	+	32	38
-	+	9	18
-	+	28	0
-	+	18	0

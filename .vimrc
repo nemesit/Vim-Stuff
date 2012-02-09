@@ -116,3 +116,5 @@ set backspace=2
 "nerdtree settings
 map <leader>d :NERDTreeToggle<CR>
 
+"test
+

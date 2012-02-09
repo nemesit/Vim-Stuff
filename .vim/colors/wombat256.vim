@@ -53,4 +53,5 @@ hi clear
  hi Number       ctermfg=173   cterm=none
  hi Special      ctermfg=194  cterm=none
  
-
+ "Addition nemesit
+ hi ErrorMsg 	 ctermfg=246     ctermbg=88
