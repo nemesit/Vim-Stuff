@@ -113,8 +113,9 @@ set mouse=a
 set ttymouse=xterm2
 set backspace=2
 
-"nerdtree settings
+"nerdtree settings toggle colors and directory arrows in utf-8
 map <leader>d :NERDTreeToggle<CR>
+let NERDChristmasTree=1
+let NERDTreeDirArrows=1
 
-"test
-
+"ultisnips

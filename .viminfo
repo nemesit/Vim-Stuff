@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Error
+~MSle0~/clang
 
 # Last Substitute Search Pattern:
 ~MSle0&return
@@ -18,28 +18,39 @@ $
 
 # Command Line History (newest to oldest):
 :q
-:w
 :q!
-:marks
-:set ruler
-:1
-:so color_demo.vim
-:noway
-:hi ErrorMsg
-:ls
-:split
+:w
+:help ultisnips
+:help UltiSnips
+:UltiSnipsEdit<cr>
+:UltiSnipsListSnippets
+:echo has("python")
+:echo has("python2.7")
+:echo has("python3")
+:q!Â°
+:help omnifunc
+:help ins-completion
+:help in-completion
 :vsplit
-:NERDTReeFind
-:help backspace
-:verbose imap ^?
-:verbose imap <DEL>
-:verbose imap 8
-:verbose imap ^H
-:verbose imap <BS>
-:NERDTreeToggle
+:NERDTree
+:1,25bd
+:bdall
+:bd#
+:bd2
 
 # Search String History (newest to oldest):
-?/Error
+?/clang
+?/context
+? \Vfor\%#
+? \s\+$
+?/TOhtml
+?/Load
+?/load
+? }
+?/loader
+?/dvrs
+?/dvr
+?/DVRS
 ?/tab
 ? \<hello\>
 ?/plugin
@@ -48,17 +59,6 @@ $
 ?/split
 ?/g:
 ?/.
-?/snippet\ .
-?/snippet .
-? ^\s*$
-?/cmd_p
-? \<ausgegeben\>
-? \/\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\/
-?/log
-?/wer
-?/Impulser
-?/Impuls
-?/W_pot
 
 # Expression History (newest to oldest):
 
@@ -72,30 +72,26 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	hallo wichser
+"0	CHAR	0
+	~/.vim/UltiSnips-2.0
 ""1	LINE	0
-	hallo wichser
+	let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 "2	LINE	0
-	hallo wichser
-"3	LINE	0
-	hallo spacken
+	let g:UltiSnipsDontReverseSearchPath="1"
+"3	CHAR	0
+	count
 "4	LINE	0
-	hallo spacken
+	set runtimepath+=~/.vim/UltiSnips-2.0
 "5	CHAR	0
-	r
-	
-	
-	
-	
+	count
 "6	LINE	0
-	set ruler
-"7	CHAR	0
-	5
+	:helptags ~/.vim/UltiSnips-2.0
+"7	LINE	0
+		/* code */dd
 "8	CHAR	0
-	8
-"9	CHAR	0
-	"
+	count
+"9	LINE	0
+	set runtimepath+=~/.vim/ultisnips_rep
 "a	CHAR	0
 	aaaq€kb€kb€kb€kb
 "q	CHAR	0
@@ -103,124 +99,599 @@ $
 "u	CHAR	0
 	itc€kb€kb€kb€kb
 "-	CHAR	0
-	8
+	ficken
 
 # File marks:
 'M  53  21  ~/Documents/PhysikI.txt
 'N  471  8  ~/Documents/PhysikI.txt
-'0  35  94  ~/.bash_profile
-'1  5  0  ~/.bash_profile
-'2  4  0  ~/Documents/Development/vim/test/test
-'3  1  0  ~/Documents/Development/vim/test/test
-'4  37  0  ~/.vimrc
-'5  120  0  ~/.vimrc
-'6  1  0  ~/Documents/Development/vim/test/color_demo.vim
-'7  262  0  ~/Documents/Development/vim/test/color_demo.vim
-'8  8  3  ~/Documents/Development/vim/test/colors.py
-'9  1  0  ~/.vim/colors/wombat256.vim
+'0  51  6  ~/.vimrc
+'1  122  0  ~/.vimrc
+'2  1  0  ~/test.tex
+'3  50  0  ~/.vimrc
+'4  121  0  ~/.vimrc
+'5  1  23  ~/test.c
+'6  123  0  ~/.vimrc
+'7  1  0  ~/.vimrc
+'8  123  46  ~/.vimrc
+'9  49  0  ~/.vimrc
 
 # Jumplist (newest first):
--'  35  94  ~/.bash_profile
--'  7  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  5  0  ~/.bash_profile
--'  4  0  ~/Documents/Development/vim/test/test
--'  1  0  ~/Documents/Development/vim/test/test
--'  5  0  ~/Documents/Development/vim/test/test
--'  37  0  ~/.vimrc
--'  1  10  ~/-MiniBufExplorer-
--'  2  0  ~/-MiniBufExplorer-
--'  1  0  ~/Documents/PhysikI.txt
+-'  51  6  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  120  0  ~/.vimrc
--'  118  0  ~/.vimrc
--'  100  14  ~/.vimrc
--'  1  0  ~/Documents/Development/vim/test/color_demo.vim
--'  257  0  ~/Documents/Development/vim/test/color_demo.vim
--'  262  0  ~/Documents/Development/vim/test/color_demo.vim
--'  8  3  ~/Documents/Development/vim/test/colors.py
--'  1  0  ~/Documents/Development/vim/test/colors.py
--'  1  0  ~/.vim/colors/wombat256.vim
--'  57  40  ~/.vim/colors/wombat256.vim
--'  5  0  ~/.vim/colors/wombat256.vim
--'  2  0  ~/.vim/colors/wombat256.vim
--'  3  0  ~/.vim/colors/wombat256.vim
--'  7  0  ~/.vim/colors/wombat256.vim
--'  19  0  ~/.vim/colors/wombat256.vim
--'  54  29  ~/.vimrc
+-'  122  0  ~/.vimrc
+-'  1  0  ~/test.tex
+-'  50  0  ~/.vimrc
+-'  1  12  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/.vim/UltiSnips/<cr>.snippets
+-'  121  0  ~/.vimrc
+-'  1  23  ~/test.c
+-'  123  0  ~/.vimrc
+-'  49  0  ~/.vimrc
+-'  86  0  ~/.vimrc
+-'  1  0  ~/Documents/test.c
+-'  1  1  ~/Documents/test.tex
+-'  2  0  ~/Documents/test.c
+-'  2  0  ~/test.tex
+-'  16  0  ~/test.c
+-'  7  5  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  21  2  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  1  5  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  119  22  ~/.vimrc
+-'  76  0  ~/.vimrc
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
+-'  1  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+-'  2  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+-'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_2
+-'  1  0  ~/Documents/PhysikI.txt
+-'  45  0  ~/Documents/Development/latestDSVR/Client/src/ClientSessionHandle.cpp
+-'  23  19  ~/Documents/Development/latestDSVR/Client/src/ReaderThread.cpp
+-'  22  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/include/RenderDVRFrame.h
+-'  13  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SET_PARAMETER.h
+-'  7  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/PDU_Sphere.cpp
+-'  30  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/Filter_Value_Variable_Factory.cpp
+-'  10  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameSocketIO.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameIO.cpp
+-'  142  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/DVRFrame.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_PLAY.cpp
+-'  23  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterpreter.cpp
+-'  23  15  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD.h
+-'  13  5  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
+-'  5  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  31  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+-'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  59  35  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+-'  9  43  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
 -'  29  0  ~/wings_crash.dump
 -'  1  0  ~/wings_crash.dump
--'  115  13  ~/.vimrc
--'  34  12  ~/.vimrc
--'  39  0  ~/.vimrc
--'  40  0  ~/.vimrc
 -'  116  14  ~/.vimrc
+-'  113  13  ~/.vimrc
+-'  34  12  ~/.vimrc
+-'  37  0  ~/.vimrc
+-'  38  0  ~/.vimrc
+-'  114  14  ~/.vimrc
 -'  24  0  ~/.vimrc
--'  114  0  ~/.vimrc
--'  121  11  ~/.vimrc
--'  51  38  ~/.vimrc
+-'  112  0  ~/.vimrc
+-'  117  11  ~/.vimrc
 -'  2  0  ~/.vimrc
--'  106  0  ~/.vimrc
--'  122  0  ~/.vimrc
+-'  104  0  ~/.vimrc
+-'  118  0  ~/.vimrc
 -'  4  0  ~/.vimrc
 -'  278  1  ~/NERD_tree_1
 -'  307  0  ~/NERD_tree_1
 -'  1  0  ~/NERD_tree_1
 -'  1  0  ~/test.txt
 -'  20  33  ~/.vimrc
--'  9  4  ~/.vimrc
--'  123  0  ~/.vimrc
--'  1  0  ~/Downloads/vim73/README.txt.info
--'  113  0  ~/Downloads/vim73/README.txt
--'  1  0  ~/Downloads/vim73/README.txt
--'  1  0  ~/Downloads/vim73/README_unix.txt
--'  8  0  ~/Downloads/vim73/README_mac.txt
--'  1  0  ~/Downloads/vim73/README_mac.txt
--'  104  0  ~/Downloads/vim73/README.txt
--'  49  0  ~/Downloads/vim73/README.txt
--'  1  0  ~/test
--'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  195  0  ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
+-'  1  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
 -'  2  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
--'  4  0  ~/Documents/Development/latestDSVR/NERD_tree_1
--'  21  0  ~/Documents/Development/latestDSVR/NERD_tree_1
--'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_1
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  1  0  ~/Documents/Development/CodeRunner/test1/Debug/test.c
--'  1  10  ~/Documents/Development/CodeRunner/-MiniBufExplorer-
--'  2  0  ~/Documents/Development/CodeRunner/-MiniBufExplorer-
--'  2  4  ~/test
--'  3  2  ~/.vimrc
--'  12  0  ~/test
--'  124  26  ~/.vimrc
--'  17  14  ~/.vimrc
--'  15  11  ~/.vimrc
--'  19  0  ~/.vimrc
--'  16  6  ~/.vimrc
--'  2  0  ~/Documents/Development/vim/test/test
--'  37  0  ~/.vimrc
--'  1  10  ~/-MiniBufExplorer-
--'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_2
 -'  1  0  ~/Documents/PhysikI.txt
--'  1  0  ~/.vimrc
--'  120  0  ~/.vimrc
--'  118  0  ~/.vimrc
--'  100  14  ~/.vimrc
--'  1  0  ~/Documents/Development/vim/test/color_demo.vim
--'  257  0  ~/Documents/Development/vim/test/color_demo.vim
--'  262  0  ~/Documents/Development/vim/test/color_demo.vim
--'  8  3  ~/Documents/Development/vim/test/colors.py
--'  1  0  ~/Documents/Development/vim/test/colors.py
--'  1  0  ~/.vim/colors/wombat256.vim
--'  57  40  ~/.vim/colors/wombat256.vim
--'  5  0  ~/.vim/colors/wombat256.vim
--'  2  0  ~/.vim/colors/wombat256.vim
--'  3  0  ~/.vim/colors/wombat256.vim
--'  7  0  ~/.vim/colors/wombat256.vim
--'  19  0  ~/.vim/colors/wombat256.vim
--'  54  29  ~/.vimrc
+-'  45  0  ~/Documents/Development/latestDSVR/Client/src/ClientSessionHandle.cpp
+-'  23  19  ~/Documents/Development/latestDSVR/Client/src/ReaderThread.cpp
+-'  22  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/include/RenderDVRFrame.h
+-'  13  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SET_PARAMETER.h
+-'  7  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/PDU_Sphere.cpp
+-'  30  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/Filter_Value_Variable_Factory.cpp
+-'  10  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameSocketIO.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameIO.cpp
+-'  142  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/DVRFrame.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_PLAY.cpp
+-'  23  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterpreter.cpp
+-'  23  15  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD.h
+-'  13  5  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
+-'  5  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  31  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+-'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  59  35  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+-'  9  43  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  29  0  ~/wings_crash.dump
+-'  1  12  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/.vim/UltiSnips/<cr>.snippets
+-'  1  23  ~/test.c
 
 # History of marks within files (newest to oldest):
+
+> ~/.vimrc
+	"	51	6
+	^	122	1
+	.	122	0
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	12
+	+	20	62
+	+	20	58
+	+	20	41
+	+	20	25
+	+	20	28
+	+	20	38
+	+	20	39
+	+	20	12
+	+	20	57
+	+	20	55
+	+	15	11
+	+	15	0
+	+	13	11
+	+	20	29
+	+	20	52
+	+	20	16
+	+	126	0
+	+	16	33
+	+	17	18
+	+	18	17
+	+	20	0
+	+	18	18
+	+	20	30
+	+	20	12
+	+	126	0
+	+	20	30
+	+	126	0
+	+	126	0
+	+	126	0
+	+	17	0
+	+	126	0
+	+	20	12
+	+	20	12
+	+	2	42
+	+	20	12
+	+	20	12
+	+	125	0
+	+	118	17
+	+	125	0
+	+	125	0
+	+	125	0
+	+	125	0
+	+	20	0
+	+	25	0
+	+	35	17
+	+	36	11
+	+	125	0
+	+	123	29
+	+	111	0
+	+	110	0
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	113	0
+	+	112	0
+	+	111	0
+	+	110	0
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	115	0
+	+	114	0
+	+	115	0
+	+	24	0
+	+	118	12
+	+	116	14
+	+	118	13
+	+	116	19
+	+	118	0
+	+	31	0
+	+	31	0
+	+	38	0
+	+	38	0
+	+	38	0
+	+	121	5
+	+	123	0
+	+	123	0
+	+	123	0
+	+	118	23
+	+	119	22
+	+	116	61
+	+	123	36
+	+	123	0
+	+	49	0
+	+	123	38
+	+	123	44
+	+	123	0
+	+	49	0
+	+	123	0
+	+	51	0
+	+	122	0
+
+> ~/test.tex
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/UltiSnips/<cr>.snippets
+	"	1	0
+
+> ~/-MiniBufExplorer-
+	"	1	12
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/test.c
+	"	1	23
+	^	1	24
+	.	1	23
+	+	1	23
+	+	17	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	11	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	23
+
+> ~/Documents/test.c
+	"	1	0
+	^	1	0
+	.	1	0
+	+	2	0
+	+	1	0
+
+> ~/Documents/test.tex
+	"	1	1
+	^	1	2
+	.	2	0
+	+	1	2
+	+	2	0
+
+> ~/Documents/Development/latestDSVR/NERD_tree_1
+	"	7	5
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /usr/local/share/vim/vim73/doc/options.txt
+	"	5038	6
+
+> /usr/local/share/vim/vim73/doc/insert.txt
+	"	569	29
+
+> ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
+	"	34	0
+
+> ~/Documents/Development/latestDSVR/Client/src/GUI_Gtkmm.cpp
+	"	47	0
+	.	30	0
+	+	30	0
+	+	30	6
+	+	30	0
+
+> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+	"	31	0
+	^	34	29
+	.	34	28
+	+	34	28
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
+	"	12	48
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
+	"	65	12
+	^	111	4
+	.	96	0
+	+	96	11
+	+	111	3
+	+	96	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+	"	5	0
+	.	3	0
+	+	3	0
+	b	3	0
+	e	9	38
+	m	7	0
+
+> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
+	"	13	5
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD.h
+	"	23	15
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterpreter.cpp
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_PLAY.cpp
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/DVRFrame.cpp
+	"	142	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameIO.cpp
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameSocketIO.cpp
+	"	10	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/Filter_Value_Variable_Factory.cpp
+	"	30	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/PDU_Sphere.cpp
+	"	7	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SET_PARAMETER.h
+	"	13	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/RenderDVRFrame.h
+	"	22	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/RenderDVRFrame.cpp
+	"	16	3
+
+> ~/Documents/Development/latestDSVR/Client/src/ReaderThread.cpp
+	"	23	19
+
+> ~/Documents/Development/latestDSVR/Client/src/ClientSessionHandle.cpp
+	"	45	0
+
+> /usr/local/share/vim/vim73/doc/syntax.txt
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
+	"	1	0
+	^	2	0
+	.	1	90
+	+	1	90
+
+> ~/Documents/Development/latestDSVR/NERD_tree_2
+	"	101	7
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/PhysikI.txt
+	"	29	0
+
+> ~/Documents/Physik.tex
+	"	70	0
+
+> ~/Documents/Development/CodeRunner/MegaGreeter.rb
+	"	55	1
+	^	31	26
+	.	55	1
+	+	2	0
+	+	14	10
+	+	4	20
+	+	14	15
+	+	7	2
+	+	10	1
+	+	7	32
+	+	9	3
+	+	15	13
+	+	16	33
+	+	19	24
+	+	20	25
+	+	23	26
+	+	27	21
+	+	12	0
+	+	11	20
+	+	30	13
+	+	31	33
+	+	33	53
+	+	35	19
+	+	33	19
+	+	35	41
+	+	33	49
+	+	45	25
+	+	46	18
+	+	51	64
+	+	57	12
+	+	59	0
+	+	16	25
+	+	31	25
+	+	48	2
+	+	55	1
 
 > ~/.bash_profile
 	"	35	94
@@ -308,141 +779,6 @@ $
 	+	3	0
 	x	1	15
 
-> ~/.vimrc
-	"	37	0
-	.	120	0
-	+	1	20
-	+	125	0
-	+	2	0
-	+	20	24
-	+	20	29
-	+	1	3
-	+	20	12
-	+	20	43
-	+	20	37
-	+	20	23
-	+	20	24
-	+	20	24
-	+	20	12
-	+	20	33
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	62
-	+	20	58
-	+	20	41
-	+	20	25
-	+	20	28
-	+	20	38
-	+	20	39
-	+	20	12
-	+	20	57
-	+	20	55
-	+	15	11
-	+	15	0
-	+	13	11
-	+	20	29
-	+	20	52
-	+	20	16
-	+	124	0
-	+	16	33
-	+	17	18
-	+	18	17
-	+	20	0
-	+	18	18
-	+	20	30
-	+	20	12
-	+	124	0
-	+	20	30
-	+	124	0
-	+	124	0
-	+	124	0
-	+	17	0
-	+	124	0
-	+	20	12
-	+	20	12
-	+	2	42
-	+	20	12
-	+	20	12
-	+	123	0
-	+	118	17
-	+	123	0
-	+	123	0
-	+	123	0
-	+	123	0
-	+	20	0
-	+	25	0
-	+	35	17
-	+	36	11
-	+	123	0
-	+	121	29
-	+	111	0
-	+	110	0
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	113	0
-	+	112	0
-	+	111	0
-	+	110	0
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	115	0
-	+	114	0
-	+	115	0
-	+	24	0
-	+	118	12
-	+	116	14
-	+	118	13
-	+	116	19
-	+	118	0
-	+	31	0
-	+	31	0
-	+	38	0
-	+	38	0
-	+	38	0
-	+	119	5
-	+	120	0
-
-> ~/Documents/PhysikI.txt
-	"	40	18
-
-> ~/-MiniBufExplorer-
-	"	1	10
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
 > ~/Documents/Development/vim/test/color_demo.vim
 	"	1	0
 	^	262	1
@@ -518,9 +854,6 @@ $
 > ~/wings_crash.dump
 	"	29	0
 
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
-	"	1	0
-
 > ~/test.txt
 	"	1	0
 
@@ -528,12 +861,6 @@ $
 	"	3	0
 	.	3	0
 	+	3	0
-
-> ~/Documents/Development/latestDSVR/Client/src/GUI_Gtkmm.cpp
-	"	35	0
-
-> ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
-	"	97	0
 
 > ~/Downloads/gist1109948-4b8089314e659afa69ec7737498c4147fab39f80/NERD_tree_1
 	"	4	0
@@ -587,33 +914,6 @@ $
 	+	2	8
 	+	2	6
 	+	1	0
-	+	2	0
-
-> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
-	"	13	0
-	^	34	29
-	.	34	28
-	+	34	28
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
-	"	82	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
-	"	11	0
-	.	3	0
-	+	3	0
-	b	3	0
-	e	9	38
-	m	7	0
-
-> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
-	"	1	96
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 	+	2	0
 
 > ~/Desktop/04-PDE/displaymatrix.c
@@ -752,31 +1052,6 @@ $
 > ~/myssession.vim
 	"	556	0
 
-> ~/Documents/Development/latestDSVR/NERD_tree_1
-	"	19	6
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
-	"	1	0
-
 > ~/Downloads/autoconf-2.68/README
 	"	29	0
 
@@ -831,232 +1106,3 @@ $
 
 > ~/.vim/nerdtree_plugin/exec_menuitem.vim
 	"	34	0
-
-> ~/Documents/vim-surround/README.markdown
-	"	96	0
-	.	96	0
-	+	96	0
-
-> ~/Documents/uebung.tex
-	"	40	4
-	^	40	1
-	.	40	0
-	+	40	0
-	m	40	4
-
-> ~/.vim/doc/surround.txt
-	"	11	48
-
-> ~/Documents/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/NERD_tree_2
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.bash_aliases
-	"	1	0
-
-> ~/Desktop/04-PDE/askparams.c
-	"	4	0
-
-> ~/Desktop/04-PDE/partdiff-seq.h
-	"	11	0
-
-> ~/Desktop/04-PDE/partdiff-seq.c
-	"	60	41
-	.	61	0
-	+	61	0
-
-> ~/.git/logs/HEAD
-	"	1	0
-
-> ~/Downloads/Modern-Perl-1.20120130/README
-	"	1	0
-
-> ~/Documents/PhysikI2.txt
-	"	49	0
-	^	49	0
-	.	49	0
-	+	6	11
-	+	5	14
-	+	4	12
-	+	2	75
-	+	7	0
-	+	8	112
-	+	9	0
-	+	13	0
-	+	11	9
-	+	14	112
-	+	50	0
-	+	15	53
-	+	19	48
-	+	22	22
-	+	23	0
-	+	30	1
-	+	28	16
-	+	30	41
-	+	38	0
-	+	33	62
-	+	36	0
-	+	40	37
-	+	41	26
-	+	43	6
-	+	37	25
-	+	43	22
-	+	44	11
-	+	43	13
-	+	46	36
-	+	49	0
-
-> ~/.ssh/config
-	"	1	35
-	^	1	36
-	.	1	35
-	+	1	0
-	+	1	35
-
-> ~/Documents/Development/nemesit/iris/layout/DEBIAN/control
-	"	1	0
-	^	8	15
-	.	8	14
-	+	1	19
-	+	7	19
-	+	8	14
-
-> ~/.ssh/known_hosts
-	"	7	0
-	.	8	0
-	+	3	0
-	+	8	0
-
-> ~/Documents/Development/Carcassonnehack/header/cheater/Tweak.xm
-	"	20	4
-	^	23	26
-	.	23	25
-	+	21	2
-	+	35	0
-	+	21	0
-	+	43	2
-	+	35	0
-	+	31	2
-	+	35	2
-	+	35	2
-	+	44	17
-	+	50	1
-	+	58	1
-	+	31	2
-	+	23	2
-	+	32	2
-	+	33	2
-	+	23	1
-	+	31	2
-	+	35	1
-	+	23	1
-	+	24	0
-	+	23	19
-	+	21	2
-	+	23	2
-	+	30	0
-	+	24	2
-	+	21	1
-	+	23	7
-	+	14	0
-	+	12	0
-	+	10	32
-	+	21	16
-	+	23	18
-	+	30	21
-	+	21	25
-	+	23	28
-	+	30	25
-	+	31	0
-	+	35	0
-	+	29	0
-	+	25	13
-	+	26	5
-	+	30	2
-	+	28	20
-	+	25	16
-	+	35	1
-	+	43	1
-	+	44	16
-	+	50	0
-	+	58	0
-	+	53	70
-	+	53	71
-	+	54	0
-	+	53	71
-	+	53	71
-	+	54	0
-	+	54	0
-	+	15	22
-	+	54	12
-	+	22	0
-	+	21	2
-	+	22	5
-	+	26	20
-	+	30	1
-	+	23	25
-
-> ~/Documents/Development/Carcassonnehack/header/cheater/Tweak.
-	"	1	0
-
-> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/Makefile
-	"	1	0
-
-> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/iCheat.mm
-	"	1	0
-
-> ~/Documents/Development/nemesit/iris/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Development/nemesit/iris/NERD_tree_2
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/Development/nemesit/iris/sachbaerbeiter.txt
-	"	1	0
-
-> ~/Documents/Development/Carcassonnehack/header/cheater/Settings/icheat/entry.plist
-	"	1	0
-
-> ~/.vim/filetype.vim
-	"	1	0
-	^	1	50
-	.	1	44
-	+	1	44
-
-> ~/Downloads/10-PBS-Scripte/cases
-	"	3	0
-	^	5	54
-	.	5	53
-	+	1	128
-	+	1	19
-	+	1	108
-	+	3	0
-	+	2	8
-	+	3	8
-	+	4	4
-	+	5	4
-	+	4	14
-	+	5	14
-	+	3	10
-	+	2	10
-	+	5	14
-	+	4	14
-	+	2	11
-	+	3	11
-	+	4	10
-	+	5	10
-	+	3	54
-	+	5	53
-
-> ~/Downloads/10-PBS-Scripte/TESTINGFUCKINGSCRIPT_2_3_200.job
-	"	1	0
