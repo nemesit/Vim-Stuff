@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/clang
+~MSle0~/UT
 
 # Last Substitute Search Pattern:
 ~MSle0&return
@@ -18,27 +18,30 @@ $
 
 # Command Line History (newest to oldest):
 :q
-:q!
 :w
-:help ultisnips
-:help UltiSnips
-:UltiSnipsEdit<cr>
-:UltiSnipsListSnippets
-:echo has("python")
-:echo has("python2.7")
-:echo has("python3")
-:q!Â°
-:help omnifunc
-:help ins-completion
-:help in-completion
+:call UMiniBufExplorer
+:botright cope
+:e test.c
 :vsplit
-:NERDTree
-:1,25bd
-:bdall
-:bd#
-:bd2
+:help cope
+:filetype detect
+:syntax
+:filetype
+:set ft=c
+:ft
+:q!
+:set ft=tex
+:e hallo
+:qall!
+:scriptname
+:map <tab>
+:scriptnames
+:list all plugins
 
 # Search String History (newest to oldest):
+?/UT
+?/hel
+? \<2\>
 ?/clang
 ?/context
 ? \Vfor\%#
@@ -56,9 +59,6 @@ $
 ?/plugin
 ?/indent
 ?/statusline
-?/split
-?/g:
-?/.
 
 # Expression History (newest to oldest):
 
@@ -72,26 +72,30 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	~/.vim/UltiSnips-2.0
+"0	LINE	0
+	au BufNewFile,BufRead *.xm,*.xmm,*.l.mm setf logos
 ""1	LINE	0
-	let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+	\section{new} 
+	\label{sec:uhh}
+	
 "2	LINE	0
-	let g:UltiSnipsDontReverseSearchPath="1"
+					
+	
+	% section uhh (end)
 "3	CHAR	0
-	count
-"4	LINE	0
-	set runtimepath+=~/.vim/UltiSnips-2.0
-"5	CHAR	0
-	count
+	new
+"4	CHAR	0
+	section name
+"5	LINE	0
+	autocmd BufRead,Bufnew :call UminiBufExplorer
 "6	LINE	0
-	:helptags ~/.vim/UltiSnips-2.0
+	
 "7	LINE	0
-		/* code */dd
+	set incsearch
 "8	CHAR	0
-	count
-"9	LINE	0
-	set runtimepath+=~/.vim/ultisnips_rep
+	Set auto r
+"9	CHAR	0
+	?
 "a	CHAR	0
 	aaaq€kb€kb€kb€kb
 "q	CHAR	0
@@ -99,48 +103,87 @@ $
 "u	CHAR	0
 	itc€kb€kb€kb€kb
 "-	CHAR	0
-	ficken
+	Set auto r
 
 # File marks:
 'M  53  21  ~/Documents/PhysikI.txt
 'N  471  8  ~/Documents/PhysikI.txt
-'0  51  6  ~/.vimrc
-'1  122  0  ~/.vimrc
-'2  1  0  ~/test.tex
-'3  50  0  ~/.vimrc
-'4  121  0  ~/.vimrc
-'5  1  23  ~/test.c
-'6  123  0  ~/.vimrc
-'7  1  0  ~/.vimrc
-'8  123  46  ~/.vimrc
-'9  49  0  ~/.vimrc
+'0  1  0  ~/test.tex
+'1  193  34  ~/.vimrc
+'2  1  33  ~/.vimrc
+'3  175  0  ~/.vimrc
+'4  1  0  ~/.vim/.vimrc
+'5  1  0  ~/.vim/test.c
+'6  1  20  ~/.vim/test.tex
+'7  2  35  ~/.vim/filetype.vim
+'8  1  49  ~/.vim/filetype.vim
+'9  1  1  ~/test
 
 # Jumplist (newest first):
--'  51  6  ~/.vimrc
--'  1  0  ~/.vimrc
--'  122  0  ~/.vimrc
 -'  1  0  ~/test.tex
--'  50  0  ~/.vimrc
--'  1  12  ~/-MiniBufExplorer-
+-'  193  34  ~/.vimrc
+-'  4  0  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  175  0  ~/.vimrc
+-'  1  0  ~/-MiniBufExplorer-
 -'  2  0  ~/-MiniBufExplorer-
+-'  1  0  ~/test.c
+-'  167  18  ~/.vimrc
+-'  153  18  ~/.vimrc
+-'  1  0  ~/.vim/.vimrc
+-'  1  0  ~/.vim/test.c
+-'  1  20  ~/.vim/test.tex
+-'  2  35  ~/.vim/filetype.vim
+-'  1  0  ~/.vim/filetype.vim
+-'  1  1  ~/test
+-'  1  0  ~/hallo
+-'  13  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  11  0  ~/[Vundle] Installer
+-'  57  0  ~/.vimrc
+-'  1  0  ~/.vim/syntax/snippet.vim
+-'  43  2  ~/.vimrc
+-'  48  13  ~/.vimrc
+-'  16  0  ~/.vimrc
+-'  1  0  ~/.vim/README.markdown
+-'  1  0  ~/.vim/plugin-info.txt
+-'  1  0  ~/.vim/NERD_tree_2
+-'  13  2  ~/.vim/NERD_tree_2
+-'  13  2  ~/.vim/NERD_tree_1
+-'  1  0  ~/.vim/NERD_tree_1
+-'  189  0  ~/.vimrc
+-'  192  0  ~/.vimrc
+-'  104  0  ~/.vim/snippets/c.snippets
+-'  1  0  ~/.vim/snippets/c.snippets
+-'  1  0  ~/.vim/ftplugin/html_snip_helper.vim
+-'  1  0  ~/.vim/autoload/snippets/dummy.vim
+-'  1  0  ~/.vim/autoload/snippets/clang_complete.vim
+-'  159  15  ~/.vimrc
+-'  180  14  ~/.vimrc
+-'  2  17  ~/Documents/BWL Invest/test.c
+-'  1  0  ~/Documents/BWL Invest/test.c
+-'  1  0  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  61  0  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  62  20  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  114  6  ~/.vimrc
+-'  194  0  ~/.vimrc
+-'  113  0  ~/.vimrc
 -'  1  0  ~/.vim/UltiSnips/<cr>.snippets
--'  121  0  ~/.vimrc
--'  1  23  ~/test.c
--'  123  0  ~/.vimrc
--'  49  0  ~/.vimrc
--'  86  0  ~/.vimrc
+-'  187  0  ~/.vimrc
+-'  195  0  ~/.vimrc
+-'  112  0  ~/.vimrc
+-'  149  0  ~/.vimrc
 -'  1  0  ~/Documents/test.c
 -'  1  1  ~/Documents/test.tex
 -'  2  0  ~/Documents/test.c
--'  2  0  ~/test.tex
--'  16  0  ~/test.c
--'  7  5  ~/Documents/Development/latestDSVR/NERD_tree_1
--'  21  2  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  6  0  ~/test.tex
+-'  20  0  ~/test.c
+-'  27  5  ~/Documents/Development/latestDSVR/NERD_tree_1
+-'  41  2  ~/Documents/Development/latestDSVR/NERD_tree_1
 -'  1  5  ~/Documents/Development/latestDSVR/NERD_tree_1
--'  119  22  ~/.vimrc
--'  76  0  ~/.vimrc
+-'  185  22  ~/.vimrc
+-'  139  0  ~/.vimrc
 -'  1  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
--'  1  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
 -'  2  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
 -'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_2
 -'  1  0  ~/Documents/PhysikI.txt
@@ -162,177 +205,159 @@ $
 -'  5  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
 -'  31  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
 -'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  59  35  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
--'  9  43  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  29  0  ~/wings_crash.dump
--'  1  0  ~/wings_crash.dump
--'  116  14  ~/.vimrc
--'  113  13  ~/.vimrc
--'  34  12  ~/.vimrc
--'  37  0  ~/.vimrc
--'  38  0  ~/.vimrc
--'  114  14  ~/.vimrc
--'  24  0  ~/.vimrc
--'  112  0  ~/.vimrc
--'  117  11  ~/.vimrc
--'  2  0  ~/.vimrc
--'  104  0  ~/.vimrc
--'  118  0  ~/.vimrc
--'  4  0  ~/.vimrc
--'  278  1  ~/NERD_tree_1
--'  307  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  1  0  ~/test.txt
--'  20  33  ~/.vimrc
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
--'  1  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
--'  2  0  ~/Documents/Development/latestDSVR/-MiniBufExplorer-
--'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_2
--'  1  0  ~/Documents/PhysikI.txt
--'  45  0  ~/Documents/Development/latestDSVR/Client/src/ClientSessionHandle.cpp
--'  23  19  ~/Documents/Development/latestDSVR/Client/src/ReaderThread.cpp
--'  22  0  ~/Documents/Development/latestDSVR/SharedClassesRendering/include/RenderDVRFrame.h
--'  13  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SET_PARAMETER.h
--'  7  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/PDU_Sphere.cpp
--'  30  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/Filter_Value_Variable_Factory.cpp
--'  10  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameSocketIO.cpp
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameIO.cpp
--'  142  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/DVRFrame.cpp
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_PLAY.cpp
--'  23  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterpreter.cpp
--'  23  15  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD.h
--'  13  5  ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
--'  5  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  31  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
--'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  59  35  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
--'  9  43  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  29  0  ~/wings_crash.dump
--'  1  12  ~/-MiniBufExplorer-
+-'  1  0  ~/-MiniBufExplorer-
 -'  2  0  ~/-MiniBufExplorer-
--'  1  0  ~/.vim/UltiSnips/<cr>.snippets
--'  1  23  ~/test.c
+-'  1  0  ~/test.c
+-'  1  0  ~/.vim/.vimrc
+-'  1  0  ~/.vim/test.c
+-'  1  20  ~/.vim/test.tex
+-'  2  35  ~/.vim/filetype.vim
+-'  1  0  ~/.vim/filetype.vim
+-'  1  0  ~/-MiniBufExplorer-
+-'  2  0  ~/-MiniBufExplorer-
 
 # History of marks within files (newest to oldest):
 
-> ~/.vimrc
-	"	51	6
-	^	122	1
-	.	122	0
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	12
-	+	20	62
-	+	20	58
-	+	20	41
-	+	20	25
-	+	20	28
-	+	20	38
-	+	20	39
-	+	20	12
-	+	20	57
-	+	20	55
-	+	15	11
-	+	15	0
-	+	13	11
-	+	20	29
-	+	20	52
-	+	20	16
-	+	126	0
-	+	16	33
-	+	17	18
-	+	18	17
-	+	20	0
-	+	18	18
-	+	20	30
-	+	20	12
-	+	126	0
-	+	20	30
-	+	126	0
-	+	126	0
-	+	126	0
-	+	17	0
-	+	126	0
-	+	20	12
-	+	20	12
-	+	2	42
-	+	20	12
-	+	20	12
-	+	125	0
-	+	118	17
-	+	125	0
-	+	125	0
-	+	125	0
-	+	125	0
-	+	20	0
-	+	25	0
-	+	35	17
-	+	36	11
-	+	125	0
-	+	123	29
-	+	111	0
-	+	110	0
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	113	0
-	+	112	0
-	+	111	0
-	+	110	0
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	115	0
-	+	114	0
-	+	115	0
-	+	24	0
-	+	118	12
-	+	116	14
-	+	118	13
-	+	116	19
-	+	118	0
-	+	31	0
-	+	31	0
-	+	38	0
-	+	38	0
-	+	38	0
-	+	121	5
-	+	123	0
-	+	123	0
-	+	123	0
-	+	118	23
-	+	119	22
-	+	116	61
-	+	123	36
-	+	123	0
-	+	49	0
-	+	123	38
-	+	123	44
-	+	123	0
-	+	49	0
-	+	123	0
-	+	51	0
-	+	122	0
-
 > ~/test.tex
 	"	1	0
-	^	1	0
 	.	1	0
+	+	1	2
+	+	1	0
+	+	5	0
+	+	5	0
+	+	1	0
+	+	1	0
 	+	1	0
 
-> ~/.vim/UltiSnips/<cr>.snippets
+> ~/.vimrc
+	"	193	34
+	.	175	0
+	+	82	0
+	+	96	0
+	+	96	0
+	+	96	0
+	+	187	5
+	+	195	0
+	+	195	0
+	+	195	0
+	+	184	23
+	+	185	22
+	+	182	61
+	+	195	36
+	+	195	0
+	+	112	0
+	+	195	38
+	+	195	44
+	+	195	0
+	+	112	0
+	+	195	0
+	+	114	0
+	+	194	0
+	+	188	37
+	+	189	32
+	+	190	36
+	+	191	41
+	+	192	41
+	+	103	1
+	+	104	0
+	+	100	0
+	+	99	0
+	+	112	0
+	+	114	0
+	+	116	0
+	+	127	0
+	+	192	0
+	+	191	0
+	+	190	0
+	+	189	0
+	+	99	0
+	+	100	0
+	+	103	0
+	+	112	0
+	+	114	0
+	+	116	0
+	+	192	0
+	+	191	0
+	+	190	0
+	+	189	0
+	+	52	0
+	+	6	0
+	+	30	0
+	+	16	8
+	+	10	0
+	+	22	32
+	+	23	28
+	+	24	25
+	+	25	31
+	+	26	33
+	+	27	25
+	+	48	0
+	+	28	8
+	+	31	17
+	+	32	25
+	+	31	25
+	+	35	35
+	+	46	45
+	+	9	39
+	+	46	0
+	+	46	0
+	+	37	12
+	+	44	1
+	+	43	1
+	+	42	0
+	+	41	0
+	+	40	1
+	+	39	1
+	+	38	1
+	+	48	0
+	+	193	33
+	+	177	6
+	+	60	21
+	+	61	11
+	+	63	18
+	+	64	14
+	+	68	12
+	+	70	13
+	+	70	0
+	+	90	0
+	+	90	0
+	+	91	0
+	+	88	0
+	+	89	13
+	+	93	9
+	+	86	44
+	+	94	0
+	+	107	0
+	+	110	0
+	+	109	10
+	+	174	12
+	+	175	0
+
+> /usr/local/share/vim/vim73/doc/quickfix.txt
+	"	304	9
+
+> ~/test.c
 	"	1	0
+	.	1	0
+	+	1	23
+	+	21	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	15	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	7
+	+	1	0
 
 > ~/-MiniBufExplorer-
-	"	1	12
+	"	1	0
 	.	2	0
 	+	2	0
 	+	2	0
@@ -360,21 +385,285 @@ $
 	+	2	0
 	+	2	0
 	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
-> ~/test.c
-	"	1	23
-	^	1	24
-	.	1	23
-	+	1	23
-	+	17	0
+> ~/.vim/.vimrc
+	"	1	0
+
+> ~/.vim/test.c
+	"	1	0
+	^	1	23
+	.	1	0
 	+	1	0
 	+	1	0
+
+> ~/.vim/test.tex
+	"	1	20
+	^	1	9
+	.	6	0
 	+	1	0
+	+	6	0
+
+> ~/.vim/filetype.vim
+	"	2	35
+	^	2	36
+	.	2	35
+	+	2	0
+	+	2	35
+
+> ~/test
+	"	1	1
+	^	1	3
+	.	1	1
+	+	2	19
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
 	+	11	0
+	+	12	0
+	+	2	11
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	9
+	+	2	8
+	+	2	8
+	+	2	6
+	+	1	0
+	+	2	0
+	+	1	1
+
+> ~/hallo
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+	"	13	0
+	^	34	29
+	.	34	28
+	+	34	28
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
+	"	82	0
+	^	111	4
+	.	96	0
+	+	96	11
+	+	111	3
+	+	96	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+	"	11	0
+	.	3	0
+	+	3	0
+	b	3	0
+	e	9	38
+	m	7	0
+
+> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+	"	1	39
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/NERD_tree_1
+	"	4	0
+	.	1	0
 	+	1	0
 	+	1	0
 	+	1	0
-	+	1	23
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/[Vundle] Installer
+	"	11	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/syntax/snippet.vim
+	"	1	0
+
+> ~/.vim/README.markdown
+	"	1	0
+
+> ~/.vim/plugin-info.txt
+	"	1	0
+
+> ~/.vim/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /usr/local/share/vim/vim73/doc/starting.txt
+	"	797	50
+
+> ~/.vim/snippets/c.snippets
+	"	104	0
+	^	113	1
+	.	113	0
+	+	112	0
+	+	113	0
+
+> ~/.vim/ftplugin/html_snip_helper.vim
+	"	1	0
+
+> ~/.vim/autoload/snippets/dummy.vim
+	"	1	0
+
+> ~/.vim/autoload/snippets/clang_complete.vim
+	"	1	0
+
+> ~/Documents/BWL Invest/test.c
+	"	2	17
+	^	2	18
+	.	3	0
+	+	1	0
+	+	2	0
+	+	3	0
+
+> ~/Documents/BWL Invest/BWL_Formel.tex
+	"	1	0
+	.	62	0
+	+	62	0
+
+> ~/Documents/BWL Invest/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/BWL Invest/-MiniBufExplorer-
+	"	1	19
+	.	2	0
+	+	2	0
+
+> ~/.vim/ultisnips_rep/doc/UltiSnips.txt
+	"	3	68
+
+> ~/.vim/UltiSnips/<cr>.snippets
+	"	1	0
 
 > ~/Documents/test.c
 	"	1	0
@@ -489,99 +778,8 @@ $
 	+	30	6
 	+	30	0
 
-> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
-	"	31	0
-	^	34	29
-	.	34	28
-	+	34	28
-
 > ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
 	"	12	48
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
-	"	65	12
-	^	111	4
-	.	96	0
-	+	96	11
-	+	111	3
-	+	96	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
-	"	5	0
-	.	3	0
-	+	3	0
-	b	3	0
-	e	9	38
-	m	7	0
-
-> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
 > ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
 	"	13	5
@@ -808,49 +1006,6 @@ $
 > /usr/local/share/vim/vim73/doc/intro.txt
 	"	770	0
 
-> ~/NERD_tree_1
-	"	40	11
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
 > ~/wings_crash.dump
 	"	29	0
 
@@ -884,37 +1039,6 @@ $
 
 > ~/Downloads/vim73/README_mac.txt
 	"	8	0
-
-> ~/test
-	"	1	0
-	.	2	0
-	+	2	19
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	2	11
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	9
-	+	2	8
-	+	2	8
-	+	2	6
-	+	1	0
-	+	2	0
 
 > ~/Desktop/04-PDE/displaymatrix.c
 	"	1	0
@@ -990,13 +1114,6 @@ $
 	+	2	0
 	+	2	0
 
-> ~/.vim/snippets/c.snippets
-	"	113	0
-	^	113	1
-	.	113	0
-	+	112	0
-	+	113	0
-
 > ~/Documents/Development/vim/snipmate.vim/plugin-info.txt
 	"	1	0
 
@@ -1033,76 +1150,3 @@ $
 
 > ~/Documents/Development/projectm/projectm/trunk/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
 	"	1	0
-
-> ~/Documents/Development/projectm/projectm/trunk/src/macos/FTGL/freetype src/gzip/zutil.c
-	"	1	0
-
-> ~/Documents/Development/projectm/projectm/trunk-old/src/WinLibs/freetype-2.3.5/src/gzip/zutil.c
-	"	1	0
-
-> ~/Documents/Development/stuff/vim/vim/src/eval.c
-	"	1	0
-
-> ~/Downloads/libpng-1.5.5/pngmem.c
-	"	1	0
-
-> ~/Documents/Development/OSXTweaks/trunk/documents.txt
-	"	1	0
-
-> ~/myssession.vim
-	"	556	0
-
-> ~/Downloads/autoconf-2.68/README
-	"	29	0
-
-> ~/Documents/Development/OSXTweaks/trunk/todo.txt
-	"	1	0
-
-> ~/Documents/Development/OSXTweaks/trunk/ltmain.sh
-	"	167	0
-
-> ~/Documents/Development/OSXTweaks/trunk/Bridge.sh
-	"	30	0
-
-> ~/Documents/Development/OSXTweaks/trunk/Filter.sh
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/0xFileIO/src/FileIO.cpp
-	"	79	0
-
-> ~/Documents/Development/latestDSVR/0xFileIO/src/NERD_tree_1
-	"	5	1
-	.	1	0
-	+	1	0
-
-> ~/.bash_history
-	"	357	0
-
-> ~/Documents/Development/nemesit/iris/Tweak.xm
-	"	1	0
-
-> ~/NERD_tree_2
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/NERD_tree_3
-	"	83	1
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.vim/plugin/NERD_tree.vim
-	"	119	0
-
-> ~/.vim/doc/NERD_tree.txt
-	"	1256	0
-
-> ~/.vim/nerdtree_plugin/fs_menu.vim
-	"	196	0
-
-> ~/.vim/nerdtree_plugin/exec_menuitem.vim
-	"	34	0
