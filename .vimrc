@@ -172,7 +172,7 @@ if v:version >= 703
 endif
 
 "minibufexpl
-
+let g:miniBufExplUseSingleClick = 1
 
 "mouse
 set mouse=a
