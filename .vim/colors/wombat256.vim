@@ -17,7 +17,7 @@ hi clear
  if version >= 700
    hi CursorLine ctermbg=236 
    hi CursorColumn ctermbg=236   
-   hi MatchParen ctermfg=7    ctermbg=243   cterm=bold
+   hi MatchParen ctermfg=0    ctermbg=11  cterm=bold
    hi Pmenu      ctermfg=7   ctermbg=238 
    hi PmenuSel   ctermfg=0     ctermbg=186   
  endif
@@ -32,7 +32,7 @@ hi clear
  hi VertSplit    ctermfg=238    ctermbg=238   cterm=none
  hi Folded       ctermbg=238  ctermfg=248     cterm=none
  hi Title        ctermfg=7  ctermbg=0       cterm=bold
- hi Visual       ctermfg=7     ctermbg=238    cterm=none
+ hi Visual       ctermfg=0     ctermbg=11    cterm=none
  hi SpecialKey   ctermfg=244    ctermbg=236   cterm=none
  hi DiffAdd      ctermfg=0    ctermbg=113     cterm=none
  hi DiffChange   ctermfg=0    ctermbg=175     cterm=none

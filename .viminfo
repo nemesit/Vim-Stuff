@@ -8,37 +8,47 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<Define\>
+~MSle0~/ext
 
 # Last Substitute Search Pattern:
-~MSle0&return
+~MSle0&^
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q!
 :q
 :w
-:w! fukurokujopro.zsh-theme
-:w fukurokujopro.zsh-theme
-:q!
-:qall
-:w ~/mcobj.html
-:TOhtml
-:help 42
-:help minibufexpl
 :set ft
-:set filetype
-:call UMiniBufExplorer
-:botright cope
-:e test.c
-:vsplit
-:help cope
-:filetype detect
-:syntax
+:setf 
 :filetype
+:ft
+:Q
+:e update.xml
+:e /Users/ifukurokujo/Documents/BWL\ Invest/formeln.tex
+:e /Users/ifukurokujo/Documents
+:split
+:e /Users/ifukurokujo/Downloads
+:vsplit
+:e /Users/ifukurokujo/Documents/Physik.tex
+:!ls
+:e test.txt
+:e hello.txt
+:%s/^/#
+:!open %<.pdf &
 
 # Search String History (newest to oldest):
+?/ext
+?/2
+? \<1\>
+? \<function\>
+? \<fi\>
+? \<RPS2\>
+? \<RPS1\>
+?/(
+? formeln
+? Formeln
 ? \<Define\>
 ?/smt
 ? \s\+$
@@ -49,16 +59,6 @@ $
 ?/context
 ? \Vfor\%#
 ?/TOhtml
-?/Load
-?/load
-? }
-?/loader
-?/dvrs
-?/dvr
-?/DVRS
-?/tab
-? \<hello\>
-?/plugin
 
 # Expression History (newest to oldest):
 
@@ -73,25 +73,45 @@ $
 
 # Registers:
 "0	CHAR	0
-	â—‹
-""1	CHAR	0
-	t_cha
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+	#
+""1	LINE	0
+	int main(int argc, cha)
 "2	CHAR	0
-	p
+	n
 "3	CHAR	0
-	{prom
+	ensio
 "4	CHAR	0
-	yellow
+	nsion.alfredext
 "5	CHAR	0
-	[
+	extensions/exte
 "6	CHAR	0
-	'%{$terminfo[bold]$fg[cyan]%}%D{%T}%{$reset_color}'
+	iadvisuals.com/
 "7	CHAR	0
-	'%{$terminfo[bold]$fg[cyan]%}%D{%T}%{$reset_color}'
+	https://www.myr
 "8	CHAR	0
-	local current_time='%D{%T}'
-"9	CHAR	0
-	{H:%M
+	example
+"9	LINE	0
+	
 "a	CHAR	0
 	aaaq€kb€kb€kb€kb
 "q	CHAR	0
@@ -99,166 +119,738 @@ $
 "u	CHAR	0
 	itc€kb€kb€kb€kb
 "-	CHAR	0
-	]
+	\begin{itemize}
+		\item 
+	\end{itemize}
+	
 
 # File marks:
 'M  53  21  ~/Documents/PhysikI.txt
 'N  471  8  ~/Documents/PhysikI.txt
-'0  11  0  ~/.zshrc
-'1  34  43  ~/.oh-my-zsh/themes/bira.zsh-theme
-'2  28  21  ~/.oh-my-zsh/themes/bira.zsh-theme
-'3  1  0  ~/.zshrc
-'4  2  0  ~/.vimrc
-'5  6  40  ~/.oh-my-zsh/themes/bira.zsh-theme
-'6  10  0  ~/.zshrc
-'7  10  9  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
-'8  20  3  ~/.bash_profile
-'9  14  31  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+'0  5  16  ~/.vim/test.m
+'1  3  34  ~/.vim/filetype.vim
+'2  1  0  ~/test.m
+'3  1  0  ~/test.txt
+'4  1  89  ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
+'5  5  0  ~/Desktop/vim.xml
+'6  3  12  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
+'7  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
+'8  5  8  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+'9  4  46  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
 
 # Jumplist (newest first):
--'  11  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  34  43  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  1  0  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  28  21  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  7  18  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  6  27  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  2  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  10  0  ~/.zshrc
--'  10  9  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  1  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  14  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  20  3  ~/.bash_profile
--'  12  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  2  0  ~/.oh-my-zsh/themes/gentoo.zsh-theme
--'  1  0  ~/.oh-my-zsh/themes/gentoo.zsh-theme
--'  1  0  ~/Documents/Development/.zshrc
--'  9  14  ~/.zshrc
--'  7  0  ~/.zshrc
--'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  1  0  ~/Documents/Development/mineobj/mcobj/release-common.sh
--'  1  0  ~/Documents/Development/mineobj/mcobj/release-osx.sh
--'  1  0  ~/Documents/Development/mineobj/mcobj/goinstall.log
--'  1  0  ~/mcobj.html
--'  21  0  ~/Documents/Development/mineobj/mcobj/NERD_tree_2
--'  37  2  ~/Documents/Development/mineobj/mcobj/NERD_tree_2
--'  1  0  ~/Documents/Development/mineobj/mcobj/NERD_tree_2
--'  43  2  ~/Documents/Development/mineobj/mcobj/NERD_tree_1
--'  1  0  ~/Documents/Development/mineobj/mcobj/NERD_tree_1
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-125871905076
--'  1  0  ~/test.tex
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-62291372225
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-31808671533
--'  65  0  ~/.bash_profile
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-15374504464
--'  1  4  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-8282604411
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-3511413515
--'  1  4  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329167488
--'  26  5  ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
--'  85  1  ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
--'  1  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  1  0  ~/myssession.vim
--'  175  0  ~/.vimrc
--'  1  0  ~/test
--'  1  0  ~/test.c
--'  193  34  ~/.vimrc
--'  4  0  ~/.vimrc
--'  1  0  ~/-MiniBufExplorer-
--'  2  0  ~/-MiniBufExplorer-
--'  167  18  ~/.vimrc
--'  153  18  ~/.vimrc
--'  1  0  ~/.vim/.vimrc
--'  1  0  ~/.vim/test.c
--'  1  20  ~/.vim/test.tex
--'  2  35  ~/.vim/filetype.vim
+-'  5  16  ~/.vim/test.m
+-'  1  0  ~/.vim/test.m
+-'  3  34  ~/.vim/filetype.vim
 -'  1  0  ~/.vim/filetype.vim
--'  1  0  ~/hallo
--'  13  0  ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
--'  11  0  ~/[Vundle] Installer
--'  57  0  ~/.vimrc
--'  1  0  ~/.vim/syntax/snippet.vim
--'  43  2  ~/.vimrc
--'  48  13  ~/.vimrc
--'  16  0  ~/.vimrc
--'  1  0  ~/.vim/README.markdown
--'  1  0  ~/.vim/plugin-info.txt
--'  1  0  ~/.vim/NERD_tree_2
--'  13  2  ~/.vim/NERD_tree_2
--'  13  2  ~/.vim/NERD_tree_1
--'  1  0  ~/.vim/NERD_tree_1
--'  189  0  ~/.vimrc
--'  192  0  ~/.vimrc
--'  104  0  ~/.vim/snippets/c.snippets
--'  1  0  ~/.vim/snippets/c.snippets
--'  1  0  ~/.vim/ftplugin/html_snip_helper.vim
--'  1  0  ~/.vim/autoload/snippets/dummy.vim
--'  1  0  ~/.vim/autoload/snippets/clang_complete.vim
--'  159  15  ~/.vimrc
--'  180  14  ~/.vimrc
--'  2  17  ~/Documents/BWL Invest/test.c
--'  1  0  ~/Documents/BWL Invest/test.c
--'  1  0  ~/Documents/BWL Invest/BWL_Formel.tex
--'  61  0  ~/Documents/BWL Invest/BWL_Formel.tex
--'  62  20  ~/Documents/BWL Invest/BWL_Formel.tex
--'  114  6  ~/.vimrc
--'  194  0  ~/.vimrc
--'  113  0  ~/.vimrc
--'  1  0  ~/.vim/UltiSnips/<cr>.snippets
--'  187  0  ~/.vimrc
--'  195  0  ~/.vimrc
--'  112  0  ~/.vimrc
--'  149  0  ~/.vimrc
--'  1  0  ~/Documents/test.c
--'  34  43  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  1  0  ~/.oh-my-zsh/themes/bira.zsh-theme
--'  28  21  ~/.oh-my-zsh/themes/bira.zsh-theme
+-'  1  0  ~/test.m
+-'  1  0  ~/test.txt
+-'  1  89  ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
+-'  5  0  ~/Desktop/vim.xml
+-'  1  0  ~/Desktop/vim.xml
+-'  3  12  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
+-'  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
+-'  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
+-'  5  8  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+-'  1  0  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+-'  4  46  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+-'  2  0  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+-'  5  16  ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
+-'  1  0  ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
+-'  5  8  ~/update.xml
+-'  2  0  ~/update.xml
+-'  4  9  ~/NERD_tree_2
+-'  7  2  ~/NERD_tree_2
+-'  1  9  ~/NERD_tree_2
+-'  10  0  ~/NERD_tree_1
+-'  1  0  ~/NERD_tree_1
+-'  560  0  ~/Documents/Physik.tex
+-'  1  14  ~/-MiniBufExplorer-
+-'  2  17  ~/-MiniBufExplorer-
+-'  1  0  ~/Documents/BWL Invest/formeln.tex
+-'  67  14  ~/Documents/Physik.tex
+-'  1  0  ~/Documents/Physik.tex
+-'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_4
+-'  387  2  ~/Documents/Development/latestDSVR/NERD_tree_4
+-'  5  2  ~/Documents/Development/latestDSVR/RServer/src/WriterThread.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/RServer/src/WriterThread.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/RServer/src/ReaderThread.cpp
+-'  1  0  ~/Documents/Development/latestDSVR/RServer/dvrs/shinjuku.dvrs
+-'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
+-'  385  2  ~/NERD_tree_2
+-'  396  2  ~/NERD_tree_1
+-'  771  2  ~/NERD_tree_2
+-'  782  2  ~/NERD_tree_1
+-'  1157  2  ~/NERD_tree_2
+-'  1168  2  ~/NERD_tree_1
+-'  1187  2  ~/NERD_tree_2
+-'  1198  2  ~/NERD_tree_1
+-'  1  0  ~/hello.txt
+-'  14  1  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  1  0  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  1  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+-'  28  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+-'  21  1  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+-'  5  0  ~/.oh-my-zsh/plugins/NERD_tree_2
+-'  1  0  ~/.oh-my-zsh/plugins/NERD_tree_2
+-'  5  2  ~/.oh-my-zsh/plugins/NERD_tree_1
+-'  1  0  ~/.oh-my-zsh/plugins/NERD_tree_1
+-'  1  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+-'  38  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+-'  32  20  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+-'  17  5  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  11  1  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  10  4  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  36  30  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  38  2  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329354584
+-'  27  27  ~/.vim/colors/wombat256.vim
+-'  1  0  ~/.vim/colors/wombat256.vim
+-'  35  40  ~/.vim/colors/wombat256.vim
+-'  20  25  ~/.vim/colors/wombat256.vim
+-'  7  0  ~/.vim/colors/wombat256.vim
+-'  21  0  ~/.vim/colors/wombat256.vim
+-'  9  0  ~/.oh-my-zsh/custom/vi-mode.zsh
+-'  1  0  ~/.oh-my-zsh/custom/vi-mode:zsh
+-'  29  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+-'  2  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+-'  11  0  ~/.zshrc
+-'  8  0  ~/.zshrc
+-'  16  0  ~/.bash_profile
+-'  3  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  33  0  ~/.zshrc
+-'  137  0  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  1  1  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  1202  0  ~/NERD_tree_1
+-'  1214  2  ~/NERD_tree_1
+-'  56  0  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  129  0  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  25  0  ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
+-'  1  0  ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
+-'  109  33  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  108  1  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  70  1  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  67  1  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  66  28  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  71  23  ~/Documents/BWL Invest/BWL_Formel.tex
+-'  5  8  ~/update.xml
+-'  2  0  ~/update.xml
+-'  4  9  ~/NERD_tree_2
+-'  7  2  ~/NERD_tree_2
 
 # History of marks within files (newest to oldest):
 
-> ~/.zshrc
+> ~/.vim/test.m
+	"	5	16
+	^	5	17
+	.	5	16
+	+	1	21
+	+	7	0
+	+	3	33
+	+	4	0
+	+	5	16
+
+> ~/.vim/filetype.vim
+	"	3	34
+	^	3	35
+	.	3	34
+	+	2	0
+	+	2	35
+	+	3	34
+
+> ~/test.m
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/test.txt
+	"	1	0
+
+> ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
+	"	1	89
+	^	1	90
+	.	1	89
+	+	1	89
+
+> ~/Desktop/vim.xml
+	"	5	0
+	^	5	1
+	.	5	0
+	+	4	5
+	+	3	0
+	+	4	0
+	+	5	0
+
+> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
+	"	3	12
+	.	3	12
+	+	3	12
+
+> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
+	"	1	0
+
+> ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+	"	5	8
+	^	4	43
+	.	3	11
+	+	4	42
+	+	3	11
+
+> ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
+	"	5	16
+	^	5	17
+	.	5	16
+	+	1	0
+	+	4	16
+	+	5	16
+
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	"	4	9
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/update.xml
+	"	5	8
+	^	5	9
+	.	5	7
+	+	1	1
+	+	2	8
+	+	3	22
+	+	4	56
+	+	5	7
+
+> ~/Documents/Physik.tex
+	"	560	0
+
+> ~/Documents/BWL Invest/formeln.tex
+	"	1	0
+
+> ~/-MiniBufExplorer-
+	"	1	14
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
+	"	16	0
+	^	34	29
+	.	34	28
+	+	34	28
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
+	"	98	4
+	^	111	4
+	.	96	0
+	+	96	11
+	+	111	3
+	+	96	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
 	"	11	0
-	^	11	0
-	.	11	0
+	.	8	0
+	+	3	0
+	+	7	1
+	+	8	0
+	b	3	0
+	e	9	38
+	m	7	0
+
+> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/latestDSVR/RServer/dvrs/shinjuku.dvrs
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/RServer/src/ReaderThread.cpp
+	"	1	0
+
+> ~/Documents/Development/latestDSVR/RServer/src/WriterThread.cpp
+	"	2	0
+
+> ~/Documents/Development/latestDSVR/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/latestDSVR/NERD_tree_3
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/latestDSVR/NERD_tree_4
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/documentclass[fleqn]{scrartcl}
+	"	1	0
+
+> ~/Documents/BWL_Formel.tex
+	"	1	0
+
+> ~/Downloads/CINEBENCH_11.529/modules/advanced
+	"	1	0
+
+> ~/hello.txt
+	"	1	0
+
+> ~/fcken.txt
+	"	1	0
+
+> ~/.oh-my-zsh/custom/vi-mode.zsh
+	"	14	1
+	^	14	2
+	.	14	1
+	+	36	0
+	+	35	1
+	+	34	1
+	+	45	0
+	+	6	0
+	+	8	0
+	+	5	0
+	+	8	32
+	+	7	5
+	+	4	0
+	+	7	26
+	+	36	1
+	+	41	33
+	+	42	0
+	+	42	0
+	+	57	0
+	+	58	0
+	+	40	0
+	+	46	0
+	+	43	0
+	+	41	0
+	+	42	1
+	+	45	0
+	+	46	0
+	+	43	0
+	+	42	0
+	+	41	0
+	+	40	0
+	+	43	0
+	+	40	0
+	+	41	0
+	+	42	0
+	+	31	1
+	+	31	13
+	+	36	1
+	+	31	39
+	+	31	0
+	+	31	0
+	+	29	0
+	+	29	0
+	+	16	0
+	+	12	0
+	+	11	0
+	+	16	3
+	+	29	1
+	+	16	3
+	+	29	1
+	+	7	26
+	+	29	0
+	+	17	1
+	+	28	0
+	+	17	1
+	+	28	0
+	+	29	0
+	+	17	0
+	+	18	51
+	+	16	3
+	+	47	0
+	+	47	0
+	+	47	16
+	+	47	0
+	+	47	0
+	+	18	1
+	+	14	1
+	+	13	3
+	+	23	0
+	+	21	1
+	+	19	1
+	+	20	29
+	+	21	0
+	+	21	2
+	+	24	1
+	+	26	2
+	+	24	30
+	+	21	30
+	+	52	0
+	+	53	0
+	+	54	0
+	+	23	2
+	+	23	1
+	+	23	0
+	+	22	17
+	+	25	0
+	+	25	29
+	+	22	17
+	+	25	10
+	+	22	8
+	+	25	8
+	+	22	8
+	+	25	7
+	+	22	8
+	+	25	8
+	+	22	8
+	+	27	0
+	+	25	19
+	+	22	20
+	+	27	94
+	+	14	1
+	+	13	3
+	+	14	1
+
+> ~/.oh-my-zsh/plugins/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.oh-my-zsh/plugins/NERD_tree_2
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	21	0
+	+	27	0
+	+	28	0
+	+	1	0
+
+> ~/.oh-my-zsh/themes/test.zsh-theme
+	"	12	0
+	^	12	0
+	.	11	15
+	+	2	0
+	+	10	0
+	+	13	0
+	+	13	0
+	+	10	0
+	+	13	0
+	+	9	0
+	+	13	0
+	+	10	0
+	+	13	15
+	+	13	0
+	+	13	0
+	+	13	12
+	+	13	0
+	+	13	0
+	+	11	14
+	+	13	0
+	+	11	27
+	+	11	27
+	+	11	8
+	+	13	0
+	+	11	16
+	+	11	26
+	+	11	21
+	+	13	0
+	+	11	15
+
+> /private/tmp/zshecl59850
+	"	1	4
+	^	1	5
+	.	1	5
+	+	1	5
+
+> ~/.zshrc
+	"	12	0
+	^	12	0
+	.	12	0
 	+	8	0
 	+	9	0
 	+	10	0
 	+	11	0
 	+	10	0
 	+	11	0
-
-> ~/.oh-my-zsh/themes/bira.zsh-theme
-	"	34	43
-	^	28	25
-	.	28	25
-	+	6	44
-	+	5	41
-	+	6	43
-	+	5	43
-	+	6	44
-	+	31	38
-	+	28	10
-	+	4	16
-	+	28	11
-	+	4	13
-	+	28	15
-	+	4	0
-	+	6	0
-	+	7	0
+	+	43	63
+	+	19	19
+	+	37	9
+	+	38	0
+	+	11	0
 	+	8	0
-	+	7	52
-	+	18	0
-	+	19	0
-	+	35	26
-	+	27	66
-	+	20	47
-	+	22	10
-	+	21	44
-	+	28	25
+	+	11	0
+	+	43	43
+	+	12	0
+	+	16	0
+	+	13	0
+	+	12	0
+	+	13	0
+	+	12	1
+	+	43	72
+	+	38	0
+	+	13	0
+	+	12	0
+
+> ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+	"	1	0
+	.	6	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	1	18
+	+	13	6
+	+	31	3
+	+	31	0
+	+	1	57
+	+	9	18
+	+	5	3
+	+	10	7
+	+	9	49
+	+	5	0
+	+	9	36
+	+	8	44
+	+	5	0
+	+	7	45
+	+	5	0
+	+	6	0
+
+> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329354584
+	"	1	0
+
+> ~/.vim/colors/wombat256.vim
+	"	27	27
+	^	35	41
+	.	35	40
+	+	58	0
+	+	57	40
+	+	2	0
+	+	57	40
+	+	35	39
+	+	20	25
+	+	35	40
+
+> ~/wombat256.vim
+	"	1	0
+
+> ~/.oh-my-zsh/custom/vi-mode:zsh
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
 
 > ~/.bash_profile
-	"	59	19
+	"	16	0
 	^	59	20
 	.	59	19
 	+	1	84
@@ -334,6 +926,127 @@ $
 	+	9	3
 	+	74	47
 	+	59	19
+
+> ~/Documents/BWL Invest/BWL_Formel.tex
+	"	137	0
+	^	109	24
+	.	109	24
+	+	36	1
+	+	35	2
+	+	36	1
+	+	35	1
+	+	37	4
+	+	37	8
+	+	38	21
+	+	39	51
+	+	41	4
+	+	40	52
+	+	41	6
+	+	27	0
+	+	28	62
+	+	26	122
+	+	55	0
+	+	41	113
+	+	42	9
+	+	44	28
+	+	42	9
+	+	44	33
+	+	42	9
+	+	44	81
+	+	46	6
+	+	45	49
+	+	46	47
+	+	47	68
+	+	48	86
+	+	50	91
+	+	49	15
+	+	47	68
+	+	51	42
+	+	52	105
+	+	54	120
+	+	54	120
+	+	55	0
+	+	54	120
+	+	55	80
+	+	55	80
+	+	55	80
+	+	56	0
+	+	20	0
+	+	21	0
+	+	59	0
+	+	88	0
+	+	87	0
+	+	87	0
+	+	85	0
+	+	85	0
+	+	65	0
+	+	70	111
+	+	65	18
+	+	66	48
+	+	65	84
+	+	67	51
+	+	68	57
+	+	71	102
+	+	87	0
+	+	71	0
+	+	72	92
+	+	83	0
+	+	73	70
+	+	74	9
+	+	73	69
+	+	74	0
+	+	75	7
+	+	75	17
+	+	74	20
+	+	75	29
+	+	76	79
+	+	77	65
+	+	78	0
+	+	77	16
+	+	78	71
+	+	82	0
+	+	80	113
+	+	81	56
+	+	82	0
+	+	112	0
+	+	112	0
+	+	99	0
+	+	99	0
+	+	93	54
+	+	94	71
+	+	95	68
+	+	96	116
+	+	96	116
+	+	96	116
+	+	97	30
+	+	101	37
+	+	102	85
+	+	103	75
+	+	104	13
+	+	105	21
+	+	101	91
+	+	105	0
+	+	110	0
+	+	108	110
+	+	109	0
+	+	108	100
+	+	109	24
+
+> ~/Documents/BWL Invest/%<.pdf &
+	"	1	0
+
+> ~/Documents/BWL Invest/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
 
 > ~/.vimrc
 	"	2	0
@@ -440,16 +1153,82 @@ $
 	+	176	0
 	+	175	0
 
-> ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
-	"	10	9
-	^	10	10
-	.	10	6
-	+	14	0
-	+	14	0
-	+	14	0
-	+	14	0
-	+	1	18
-	+	10	6
+> ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
+	"	25	0
+
+> ~/Documents/Development/nemesit/iris/Tweak.xm
+	"	61	0
+
+> ~/Documents/BWL Invest/NERD_tree_1
+	"	4	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
+	"	1	0
+
+> ~/Documents/BWL Invest/vim
+	"	1	0
+
+> ~/test.tex
+	"	1	0
+	.	1	0
+	+	1	2
+	+	1	0
+	+	3	0
+	+	3	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/.oh-my-zsh/themes/bira.zsh-theme
+	"	34	43
+	^	28	25
+	.	28	25
+	+	6	44
+	+	5	41
+	+	6	43
+	+	5	43
+	+	6	44
+	+	31	38
+	+	28	10
+	+	4	16
+	+	28	11
+	+	4	13
+	+	28	15
+	+	4	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	7	52
+	+	18	0
+	+	19	0
+	+	35	26
+	+	27	66
+	+	20	47
+	+	22	10
+	+	21	44
+	+	28	25
 
 > ~/.oh-my-zsh/themes/gentoo.zsh-theme
 	"	2	0
@@ -468,108 +1247,6 @@ $
 	.	1	0
 	+	1	0
 	+	1	0
-
-> ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
-	"	13	0
-	^	34	29
-	.	34	28
-	+	34	28
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp
-	"	82	0
-	^	111	4
-	.	96	0
-	+	96	11
-	+	111	3
-	+	96	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
-	"	11	0
-	.	8	0
-	+	3	0
-	+	7	1
-	+	8	0
-	b	3	0
-	e	9	38
-	m	7	0
-
-> ~/Documents/Development/latestDSVR/-MiniBufExplorer-
-	"	1	96
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
 
 > /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-252633433858
 	"	1	7
@@ -614,22 +1291,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/test.tex
-	"	1	0
-	.	1	0
-	+	1	2
-	+	1	0
-	+	4	0
-	+	4	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
 > /usr/local/share/vim/vim73/doc/usr_42.txt
 	"	356	59
 
@@ -656,9 +1317,6 @@ $
 	^	1	5
 	.	1	4
 	+	1	4
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/CMD_Proxy.h
-	"	26	5
 
 > ~/myssession.vim
 	"	1	0
@@ -722,45 +1380,6 @@ $
 > /usr/local/share/vim/vim73/doc/quickfix.txt
 	"	304	9
 
-> ~/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
 > ~/.vim/.vimrc
 	"	1	0
 
@@ -778,59 +1397,8 @@ $
 	+	1	0
 	+	6	0
 
-> ~/.vim/filetype.vim
-	"	2	35
-	^	2	36
-	.	2	35
-	+	2	0
-	+	2	35
-
 > ~/hallo
 	"	1	0
-
-> ~/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
 > ~/[Vundle] Installer
 	"	11	0
@@ -882,22 +1450,6 @@ $
 	+	1	0
 	+	2	0
 	+	3	0
-
-> ~/Documents/BWL Invest/BWL_Formel.tex
-	"	1	0
-	.	62	0
-	+	62	0
-
-> ~/Documents/BWL Invest/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/BWL Invest/-MiniBufExplorer-
-	"	1	19
-	.	2	0
-	+	2	0
 
 > ~/.vim/ultisnips_rep/doc/UltiSnips.txt
 	"	3	68
@@ -1004,213 +1556,3 @@ $
 
 > /usr/local/share/vim/vim73/doc/options.txt
 	"	5038	6
-
-> /usr/local/share/vim/vim73/doc/insert.txt
-	"	569	29
-
-> ~/Documents/Development/latestDSVR/Client/src/GL_Widget_expl.cpp
-	"	34	0
-
-> ~/Documents/Development/latestDSVR/Client/src/GUI_Gtkmm.cpp
-	"	47	0
-	.	30	0
-	+	30	0
-	+	30	6
-	+	30	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SETUP.h
-	"	13	5
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD.h
-	"	23	15
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterpreter.cpp
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CmdInterface.cpp
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_PLAY.cpp
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/DVRFrame.cpp
-	"	142	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameIO.cpp
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/FrameSocketIO.cpp
-	"	10	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/Filter_Value_Variable_Factory.cpp
-	"	30	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/src/PDU_Sphere.cpp
-	"	7	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesCommon/include/CMD_SET_PARAMETER.h
-	"	13	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/include/RenderDVRFrame.h
-	"	22	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/RenderDVRFrame.cpp
-	"	16	3
-
-> ~/Documents/Development/latestDSVR/Client/src/ReaderThread.cpp
-	"	23	19
-
-> ~/Documents/Development/latestDSVR/Client/src/ClientSessionHandle.cpp
-	"	45	0
-
-> /usr/local/share/vim/vim73/doc/syntax.txt
-	"	1	0
-
-> ~/Documents/Development/latestDSVR/SharedClassesRendering/src/DVRS_Loader.cpp.html
-	"	1	0
-	^	2	0
-	.	1	90
-	+	1	90
-
-> ~/Documents/Development/latestDSVR/NERD_tree_2
-	"	101	7
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/PhysikI.txt
-	"	29	0
-
-> ~/Documents/Physik.tex
-	"	70	0
-
-> ~/Documents/Development/CodeRunner/MegaGreeter.rb
-	"	55	1
-	^	31	26
-	.	55	1
-	+	2	0
-	+	14	10
-	+	4	20
-	+	14	15
-	+	7	2
-	+	10	1
-	+	7	32
-	+	9	3
-	+	15	13
-	+	16	33
-	+	19	24
-	+	20	25
-	+	23	26
-	+	27	21
-	+	12	0
-	+	11	20
-	+	30	13
-	+	31	33
-	+	33	53
-	+	35	19
-	+	33	19
-	+	35	41
-	+	33	49
-	+	45	25
-	+	46	18
-	+	51	64
-	+	57	12
-	+	59	0
-	+	16	25
-	+	31	25
-	+	48	2
-	+	55	1
-
-> ~/Documents/Development/vim/test/test
-	"	4	0
-	.	3	0
-	+	1	16
-	+	1	0
-	+	1	0
-	+	1	12
-	+	5	0
-	+	5	13
-	+	5	12
-	+	1	0
-	+	5	12
-	+	5	0
-	+	5	0
-	+	5	0
-	+	1	0
-	+	3	0
-	x	1	15
-
-> ~/Documents/Development/vim/test/color_demo.vim
-	"	1	0
-	^	262	1
-	.	1	0
-	+	263	0
-	+	261	1
-	+	260	1
-	+	262	1
-	+	1	0
-
-> ~/Documents/Development/vim/test/colors.py
-	"	8	3
-	^	8	4
-	.	8	3
-	+	9	0
-	+	8	3
-
-> ~/.vim/colors/wombat256.vim
-	"	1	0
-	^	57	41
-	.	57	40
-	+	58	0
-	+	57	40
-	+	2	0
-	+	57	40
-
-> /usr/local/share/vim/vim73/doc/intro.txt
-	"	770	0
-
-> ~/wings_crash.dump
-	"	29	0
-
-> ~/test.txt
-	"	1	0
-
-> ~/Documents/Development/vim/iTerm2/test
-	"	3	0
-	.	3	0
-	+	3	0
-
-> ~/Downloads/gist1109948-4b8089314e659afa69ec7737498c4147fab39f80/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/Downloads/vim73/README.txt.info
-	"	1	0
-
-> ~/Downloads/vim73/README.txt
-	"	113	0
-	^	49	0
-	.	49	0
-	+	49	0
-	+	49	0
-	+	49	0
-	+	49	0
-
-> ~/Downloads/vim73/README_unix.txt
-	"	1	0
-
-> ~/Downloads/vim73/README_mac.txt
-	"	8	0
-
-> ~/Desktop/04-PDE/displaymatrix.c
-	"	1	0
-	.	30	0
-	+	30	0
