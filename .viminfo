@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ext
+~MSle0~/\vLiterat
 
 # Last Substitute Search Pattern:
 ~MSle0&^
@@ -17,28 +17,32 @@
 $
 
 # Command Line History (newest to oldest):
-:q!
 :q
+:e /Users/ifukurokujo/Dropbox/UniversitaÌˆt/Abschlussarbeiten\ Template/listings/listings.tex
 :w
-:set ft
-:setf 
-:filetype
-:ft
-:Q
-:e update.xml
-:e /Users/ifukurokujo/Documents/BWL\ Invest/formeln.tex
-:e /Users/ifukurokujo/Documents
-:split
-:e /Users/ifukurokujo/Downloads
+:qall!
+:mksession mysession.vim
+:e README
+::w
 :vsplit
-:e /Users/ifukurokujo/Documents/Physik.tex
-:!ls
-:e test.txt
-:e hello.txt
-:%s/^/#
+:q!
+:SyntasticToggleMode
+:help syntastic
+:SyntasticEnable
+:syntasticEnable
+:qall
+:BundleInstall!
+:SyntasticEnable tex
+:!pdflatex -o ~/Desktop/ %
+:!pdflatex % 
 :!open %<.pdf &
+:!pdlatex %<.pdf &
 
 # Search String History (newest to oldest):
+?/\vLiterat
+?/author
+? \<20\>
+?/Bund
 ?/ext
 ?/2
 ? \<1\>
@@ -55,10 +59,6 @@ $
 ?/UT
 ?/hel
 ? \<2\>
-?/clang
-?/context
-? \Vfor\%#
-?/TOhtml
 
 # Expression History (newest to oldest):
 
@@ -72,327 +72,195 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-""1	LINE	0
-	int main(int argc, cha)
-"2	CHAR	0
-	n
-"3	CHAR	0
-	ensio
-"4	CHAR	0
-	nsion.alfredext
-"5	CHAR	0
-	extensions/exte
-"6	CHAR	0
-	iadvisuals.com/
-"7	CHAR	0
-	https://www.myr
-"8	CHAR	0
-	example
-"9	LINE	0
+""0	CHAR	0
+	-(UIImage *)convertImageToGrayScale:(UIImage *)image
+	{
+	  // Create image rectangle with current image width/height
+	  CGRect imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
 	
+	  // Grayscale color space
+	  CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+	
+	  // Create bitmap content with current image size and grayscale colorspace
+	  CGContextRef context = CGBitmapContextCreate(nil, image.size.width, image.size.height, 8, 0, colorSpace, kCGImageAlphaNone);
+	
+	  // Draw image into current context, with specified rectangle
+	  // using previously defined context (with grayscale colorspace)
+	  CGContextDrawImage(context, imageRect, [image CGImage]);
+	
+	  // Create bitmap image info from pixel data in current context
+	  CGImageRef imageRef = CGBitmapContextCreateImage(context);
+	
+	  // Create a new UIImage object  
+	  UIImage *newImage = [UIImage imageWithCGImage:imageRef];
+	
+	  // Release colorspace, context and bitmap information
+	  CGColorSpaceRelease(colorSpace);
+	  CGContextRelease(context);
+	  CFRelease(imageRef);
+	
+	  // Return the new grayscale image
+	  return newImage;
+	}
+	
+"1	BLOCK	0
+	#
+	#
+	#
+	#
+	#
+	#
+"2	LINE	0
+					if x % 3 = 0 &&
+"3	LINE	0
+			end
+"4	LINE	0
+		 	elsifdd
+"5	CHAR	0
+	dying=0;
+	
+"6	LINE	0
+		  warrior.walk!
+"7	LINE	0
+		  	warrior.attack!
+"8	CHAR	0
+	f
+"9	CHAR	0
+	i
 "a	CHAR	0
 	aaaq€kb€kb€kb€kb
 "q	CHAR	0
 	Qv€kb€kb€kb€kb€kb€kb€kb€kblslslslslsvisual
 "u	CHAR	0
 	itc€kb€kb€kb€kb
-"-	CHAR	0
-	\begin{itemize}
-		\item 
-	\end{itemize}
-	
+"-	BLOCK	0
+	#
+	#
+	#
+	#
+	#
+	#
 
 # File marks:
 'M  53  21  ~/Documents/PhysikI.txt
 'N  471  8  ~/Documents/PhysikI.txt
-'0  5  16  ~/.vim/test.m
-'1  3  34  ~/.vim/filetype.vim
-'2  1  0  ~/test.m
-'3  1  0  ~/test.txt
-'4  1  89  ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
-'5  5  0  ~/Desktop/vim.xml
-'6  3  12  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
-'7  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
-'8  5  8  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
-'9  4  46  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+'0  40  12  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/header.tex
+'1  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/da-template.
+'2  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/listings/listings.tex
+'3  13  0  ~/Documents/Development/nemesit/iris/ImageManipulator.m
+'4  4  0  ~/test.rb
+'5  22  4  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/player.rb
+'6  18  0  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/player.rb
+'7  1  0  ~/Documents/Development/rubywarrior/cd
+'8  48  0  ~/.zshrc
+'9  1  0  ~/.zshrc
 
 # Jumplist (newest first):
+-'  40  12  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/header.tex
+-'  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/header.tex
+-'  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/da-template.
+-'  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/listings/listings.tex
+-'  46  24  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/header.tex
+-'  13  0  ~/Documents/Development/nemesit/iris/ImageManipulator.m
+-'  1  0  ~/Documents/Development/nemesit/iris/ImageManipulator.m
+-'  4  0  ~/test.rb
+-'  1  0  ~/test.rb
+-'  7  0  ~/test.rb
+-'  9  2  ~/test.rb
+-'  22  4  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/player.rb
+-'  18  3  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/player.rb
+-'  1  0  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/README
+-'  13  0  ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/README
+-'  1  0  ~/Documents/Development/rubywarrior/cd
+-'  2  0  ~/Documents/Development/rubywarrior/-MiniBufExplorer-
+-'  48  0  ~/.zshrc
+-'  27  0  ~/.zshrc
+-'  14  0  ~/.zshrc
+-'  51  0  ~/.zshrc
+-'  2  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  50  82  ~/.zshrc
+-'  68  48  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  1  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  2  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  13  0  ~/Documents/IVCblah/[Vundle] Installer
+-'  76  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  1  0  ~/Documents/IVCblah/einfÃ¼hrung.tex
+-'  139  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  8  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  110  0  ~/Documents/IVCblah/Klausurvorbereitung.tex
+-'  1  0  ~/Documents/IVC blah/Klausurvorbereitung.tex
+-'  1  7  ~/NERD_tree_1
+-'  16  2  ~/NERD_tree_1
+-'  138  0  ~/Documents/IVC blah/Klausurvorbereitung.tex
+-'  165  95  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  5  0  ~/test.php
+-'  1  0  ~/test.php
+-'  31  0  ~/.vimrc
+-'  2  1  ~/test.php
+-'  8  0  ~/test.sh
+-'  1  0  ~/test.sh
+-'  1  0  ~/test.tex
+-'  1  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+-'  1  0  ~/text.txt
+-'  1  2002  ~/Desktop/file.txt
+-'  31  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  6  0  ~/Documents/test.pl
+-'  1  46  ~/Documents/IVC blah/-MiniBufExplorer-
+-'  2  19  ~/Documents/IVC blah/-MiniBufExplorer-
+-'  1  0  ~/Documents/IVC blah/einfÃ¼hrung.tex
+-'  125  0  ~/Downloads/Mail/Klausurvorbereitung.tex
+-'  1  0  ~/Downloads/SmallptGPU-v1.6/-MiniBufExplorer-
+-'  2  1  ~/Downloads/SmallptGPU-v1.6/-MiniBufExplorer-
+-'  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/chapters/titelseite.tex
+-'  46  0  ~/Downloads/Mail/Klausurvorbereitung.tex
+-'  1  0  ~/Downloads/Mail/Klausurvorbereitung.tex
+-'  14  0  ~/Library/Application Support/Sparrow/felixgrabowski@me.com.sparrowdb/Cache/INBOX/2970/1/Klausurvorbereitung.tex
+-'  1  0  ~/Library/Application Support/Sparrow/felixgrabowski@me.com.sparrowdb/Cache/INBOX/2970/1/Klausurvorbereitung.tex
+-'  30  28  ~/.vimrc
+-'  41  0  ~/.vimrc
+-'  34  1  ~/.vimrc
+-'  29  0  ~/.vimrc
+-'  28  0  ~/.vimrc
+-'  27  0  ~/.vimrc
+-'  26  0  ~/.vimrc
+-'  25  0  ~/.vimrc
+-'  24  0  ~/.vimrc
+-'  23  0  ~/.vimrc
+-'  22  0  ~/.vimrc
+-'  19  4  ~/.vimrc
+-'  17  0  ~/.vimrc
+-'  1  0  ~/Documents/Physik.tex
+-'  171  0  ~/.vimrc
+-'  14  0  ~/.vimrc
+-'  6  0  ~/test.txt
+-'  1  0  ~/test.txt
+-'  2  6  ~/test.txt
+-'  5  0  ~/test.txt
+-'  1  0  /usr/local/bin/test.txt
+-'  1  0  /usr/local/bin/NetrwMessage
+-'  1  0  ~/Downloads/MacVim-snapshot-64/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+-'  17  0  ~/Downloads/MacVim-snapshot-64/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+-'  1  0  ~/test2.txt
 -'  5  16  ~/.vim/test.m
 -'  1  0  ~/.vim/test.m
 -'  3  34  ~/.vim/filetype.vim
--'  1  0  ~/.vim/filetype.vim
--'  1  0  ~/test.m
--'  1  0  ~/test.txt
--'  1  89  ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
--'  5  0  ~/Desktop/vim.xml
--'  1  0  ~/Desktop/vim.xml
--'  3  12  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
--'  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
--'  1  0  ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
--'  5  8  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
--'  1  0  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
--'  4  46  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
--'  2  0  ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
--'  5  16  ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
--'  1  0  ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
--'  5  8  ~/update.xml
--'  2  0  ~/update.xml
--'  4  9  ~/NERD_tree_2
--'  7  2  ~/NERD_tree_2
--'  1  9  ~/NERD_tree_2
--'  10  0  ~/NERD_tree_1
--'  1  0  ~/NERD_tree_1
--'  560  0  ~/Documents/Physik.tex
--'  1  14  ~/-MiniBufExplorer-
--'  2  17  ~/-MiniBufExplorer-
--'  1  0  ~/Documents/BWL Invest/formeln.tex
--'  67  14  ~/Documents/Physik.tex
--'  1  0  ~/Documents/Physik.tex
--'  1  0  ~/Documents/Development/latestDSVR/NERD_tree_4
--'  387  2  ~/Documents/Development/latestDSVR/NERD_tree_4
--'  5  2  ~/Documents/Development/latestDSVR/RServer/src/WriterThread.cpp
--'  1  0  ~/Documents/Development/latestDSVR/RServer/src/WriterThread.cpp
--'  1  0  ~/Documents/Development/latestDSVR/RServer/src/ReaderThread.cpp
--'  1  0  ~/Documents/Development/latestDSVR/RServer/dvrs/shinjuku.dvrs
--'  11  0  ~/Documents/Development/latestDSVR/SharedClassesCommon/src/CMD_SETUP.cpp
--'  385  2  ~/NERD_tree_2
--'  396  2  ~/NERD_tree_1
--'  771  2  ~/NERD_tree_2
--'  782  2  ~/NERD_tree_1
--'  1157  2  ~/NERD_tree_2
--'  1168  2  ~/NERD_tree_1
--'  1187  2  ~/NERD_tree_2
--'  1198  2  ~/NERD_tree_1
--'  1  0  ~/hello.txt
--'  14  1  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  1  0  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  1  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
--'  28  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
--'  21  1  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
--'  5  0  ~/.oh-my-zsh/plugins/NERD_tree_2
--'  1  0  ~/.oh-my-zsh/plugins/NERD_tree_2
--'  5  2  ~/.oh-my-zsh/plugins/NERD_tree_1
--'  1  0  ~/.oh-my-zsh/plugins/NERD_tree_1
--'  1  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  38  0  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  32  20  ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
--'  17  5  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  11  1  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  10  4  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  36  30  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  38  2  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  0  /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329354584
--'  27  27  ~/.vim/colors/wombat256.vim
--'  1  0  ~/.vim/colors/wombat256.vim
--'  35  40  ~/.vim/colors/wombat256.vim
--'  20  25  ~/.vim/colors/wombat256.vim
--'  7  0  ~/.vim/colors/wombat256.vim
--'  21  0  ~/.vim/colors/wombat256.vim
--'  9  0  ~/.oh-my-zsh/custom/vi-mode.zsh
--'  1  0  ~/.oh-my-zsh/custom/vi-mode:zsh
--'  29  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
--'  2  0  ~/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
--'  11  0  ~/.zshrc
--'  8  0  ~/.zshrc
--'  16  0  ~/.bash_profile
--'  3  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  33  0  ~/.zshrc
--'  137  0  ~/Documents/BWL Invest/BWL_Formel.tex
--'  1  1  ~/Documents/BWL Invest/BWL_Formel.tex
--'  1202  0  ~/NERD_tree_1
--'  1214  2  ~/NERD_tree_1
--'  56  0  ~/Documents/BWL Invest/BWL_Formel.tex
--'  129  0  ~/Documents/BWL Invest/BWL_Formel.tex
--'  25  0  ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
--'  1  0  ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
--'  109  33  ~/Documents/BWL Invest/BWL_Formel.tex
--'  108  1  ~/Documents/BWL Invest/BWL_Formel.tex
--'  70  1  ~/Documents/BWL Invest/BWL_Formel.tex
--'  67  1  ~/Documents/BWL Invest/BWL_Formel.tex
--'  66  28  ~/Documents/BWL Invest/BWL_Formel.tex
--'  71  23  ~/Documents/BWL Invest/BWL_Formel.tex
--'  5  8  ~/update.xml
--'  2  0  ~/update.xml
--'  4  9  ~/NERD_tree_2
--'  7  2  ~/NERD_tree_2
+-'  1  0  ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/listings/listings.tex
+-'  13  0  ~/Documents/Development/nemesit/iris/ImageManipulator.m
+-'  1  0  ~/Documents/Development/nemesit/iris/ImageManipulator.m
+-'  4  0  ~/test.rb
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/test.m
-	"	5	16
-	^	5	17
-	.	5	16
-	+	1	21
-	+	7	0
-	+	3	33
-	+	4	0
-	+	5	16
+> ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/header.tex
+	"	40	12
 
-> ~/.vim/filetype.vim
-	"	3	34
-	^	3	35
-	.	3	34
-	+	2	0
-	+	2	35
-	+	3	34
-
-> ~/test.m
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/test.txt
+> ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/da-template.
 	"	1	0
 
-> ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
-	"	1	89
-	^	1	90
-	.	1	89
-	+	1	89
-
-> ~/Desktop/vim.xml
-	"	5	0
-	^	5	1
-	.	5	0
-	+	4	5
-	+	3	0
-	+	4	0
-	+	5	0
-
-> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
-	"	3	12
-	.	3	12
-	+	3	12
-
-> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
-	"	1	0
-
-> ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
-	"	5	8
-	^	4	43
-	.	3	11
-	+	4	42
-	+	3	11
-
-> ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
-	"	5	16
-	^	5	17
-	.	5	16
-	+	1	0
-	+	4	16
-	+	5	16
-
-> ~/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/NERD_tree_2
-	"	4	9
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/update.xml
-	"	5	8
-	^	5	9
-	.	5	7
-	+	1	1
-	+	2	8
-	+	3	22
-	+	4	56
-	+	5	7
-
-> ~/Documents/Physik.tex
-	"	560	0
-
-> ~/Documents/BWL Invest/formeln.tex
+> ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/listings/listings.tex
 	"	1	0
 
 > ~/-MiniBufExplorer-
@@ -443,6 +311,755 @@ $
 	+	2	0
 	+	2	0
 	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/nemesit/iris/ImageManipulator.m
+	"	13	0
+
+> ~/Downloads/sobel.java
+	"	21	0
+
+> ~/test.rb
+	"	4	0
+	^	9	3
+	.	6	0
+	+	9	0
+	+	4	0
+	+	6	0
+
+> ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/README
+	"	29	0
+
+> ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/NERD_tree_1
+	"	6	6
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/-MiniBufExplorer-
+	"	1	11
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/rubywarrior/rubywarrior/nemesit-beginner/player.rb
+	"	22	4
+	.	21	0
+	+	22	0
+	+	18	15
+	+	21	0
+	+	18	3
+	+	18	0
+	+	18	0
+	+	18	29
+	+	21	0
+	+	18	2
+	+	18	0
+	+	16	0
+	+	18	3
+	+	16	3
+	+	18	17
+	+	16	15
+	+	18	5
+	+	16	5
+	+	18	0
+	+	16	6
+	+	18	8
+	+	19	16
+	+	16	0
+	+	21	5
+	+	2	1
+	+	6	0
+	+	3	5
+	+	20	8
+	+	7	24
+	+	7	24
+	+	7	24
+	+	16	0
+	+	33	0
+	+	4	7
+	+	15	0
+	+	15	6
+	+	22	0
+	+	21	4
+	+	20	5
+	+	19	5
+	+	18	4
+	+	17	6
+	+	16	4
+	+	15	2
+	+	9	3
+	+	14	0
+	+	11	16
+	+	12	3
+	+	13	0
+	+	21	16
+	+	21	18
+	+	24	0
+	+	13	7
+	+	25	27
+	+	31	1
+	+	30	0
+	+	29	0
+	+	28	3
+	+	14	0
+	+	13	0
+	+	15	0
+	+	22	0
+	+	21	0
+
+> ~/.vimrc
+	"	36	0
+	^	31	8
+	.	31	8
+	+	206	38
+	+	206	44
+	+	206	0
+	+	119	0
+	+	206	0
+	+	121	0
+	+	205	0
+	+	199	37
+	+	200	32
+	+	201	36
+	+	202	41
+	+	203	41
+	+	110	1
+	+	111	0
+	+	107	0
+	+	106	0
+	+	119	0
+	+	121	0
+	+	123	0
+	+	134	0
+	+	203	0
+	+	202	0
+	+	201	0
+	+	200	0
+	+	106	0
+	+	107	0
+	+	110	0
+	+	119	0
+	+	121	0
+	+	123	0
+	+	203	0
+	+	202	0
+	+	201	0
+	+	200	0
+	+	55	0
+	+	6	0
+	+	30	0
+	+	16	8
+	+	10	0
+	+	22	32
+	+	23	28
+	+	24	25
+	+	25	31
+	+	26	33
+	+	27	25
+	+	51	0
+	+	28	8
+	+	34	17
+	+	35	25
+	+	34	25
+	+	38	35
+	+	49	45
+	+	9	39
+	+	49	0
+	+	49	0
+	+	40	12
+	+	47	1
+	+	46	1
+	+	45	0
+	+	44	0
+	+	43	1
+	+	42	1
+	+	41	1
+	+	51	0
+	+	204	33
+	+	188	6
+	+	67	21
+	+	68	11
+	+	70	18
+	+	71	14
+	+	75	12
+	+	77	13
+	+	77	0
+	+	97	0
+	+	97	0
+	+	98	0
+	+	95	0
+	+	96	13
+	+	100	9
+	+	93	44
+	+	101	0
+	+	114	0
+	+	117	0
+	+	116	10
+	+	185	12
+	+	186	53
+	+	187	0
+	+	186	0
+	+	29	27
+	+	30	8
+	+	173	12
+	+	174	0
+	+	174	0
+	+	32	0
+	+	33	0
+	+	30	29
+	+	62	0
+	+	66	0
+	+	65	13
+	+	31	8
+
+> ~/[Vundle] Installer
+	"	14	0
+	.	1	0
+	+	25	0
+	+	14	0
+	+	1	0
+
+> ~/.zshrc
+	"	38	0
+	^	21	29
+	.	38	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	10	0
+	+	11	0
+	+	49	145
+	+	19	19
+	+	49	91
+	+	49	82
+	+	11	0
+	+	8	0
+	+	11	0
+	+	49	125
+	+	12	0
+	+	16	0
+	+	13	0
+	+	12	0
+	+	13	0
+	+	12	1
+	+	49	154
+	+	49	82
+	+	13	0
+	+	12	0
+	+	49	82
+	+	49	82
+	+	49	82
+	+	49	82
+	+	27	0
+	+	47	0
+	+	50	0
+	+	49	12
+	+	50	0
+	+	49	224
+	+	47	0
+	+	20	28
+	+	38	0
+
+> ~/Documents/Development/rubywarrior/NERD_tree_1
+	"	7	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/Development/rubywarrior/-MiniBufExplorer-
+	"	1	11
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/Development/rubywarrior/cd
+	"	1	0
+
+> ~/Documents/IVCblah/Klausurvorbereitung.tex
+	"	68	48
+	^	113	23
+	.	113	22
+	+	113	0
+	+	116	0
+	+	113	22
+
+> ~/.vim/bundle/syntastic/doc/syntastic.txt
+	"	230	30
+
+> ~/test.php
+	"	3	0
+	^	3	0
+	.	2	0
+	+	1	2
+	+	1	0
+	+	1	3
+	+	1	2
+	+	1	1
+	+	1	1
+	+	1	4
+	+	1	3
+	+	1	5
+	+	9	1
+	+	7	1
+	+	5	0
+	+	2	4
+	+	2	0
+
+> ~/.vim/bundle/ultisnips/doc/UltiSnips.txt
+	"	134	22
+
+> ~/NERD_tree_1
+	"	9	15
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/IVCblah/einfÃ¼hrung.tex
+	"	1	0
+
+> ~/Documents/IVCblah/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/IVCblah/[Vundle] Installer
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/IVC blah/Klausurvorbereitung.tex
+	"	1	0
+	^	138	0
+	.	138	0
+	+	125	19
+	+	138	0
+
+> ~/test.sh
+	"	8	0
+	^	8	0
+	.	7	6
+	+	1	15
+	+	1	13
+	+	1	9
+	+	1	9
+	+	1	0
+	+	1	2
+	+	5	1
+	+	3	3
+	+	7	6
+
+> ~/test.tex
+	"	1	0
+	.	1	0
+	+	1	2
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	6
+	+	1	4
+	+	1	0
+	+	1	1
+	+	1	0
+
+> ~/text.txt
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
+	"	1	0
+	.	6	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	1	18
+	+	13	6
+	+	31	3
+	+	31	0
+	+	1	57
+	+	9	18
+	+	5	3
+	+	10	7
+	+	9	49
+	+	5	0
+	+	9	36
+	+	8	44
+	+	5	0
+	+	7	45
+	+	5	0
+	+	6	0
+
+> ~/Desktop/file.txt
+	"	1	2002
+	.	1	0
+	+	1	0
+
+> ~/.bash_profile
+	"	31	0
+	^	59	20
+	.	59	19
+	+	1	84
+	+	1	0
+	+	1	29
+	+	1	29
+	+	1	26
+	+	1	29
+	+	1	30
+	+	37	38
+	+	43	0
+	+	38	0
+	+	39	0
+	+	37	0
+	+	2	0
+	+	1	1
+	+	2	0
+	+	12	0
+	+	2	93
+	+	2	93
+	+	2	0
+	+	12	10
+	+	12	20
+	+	12	0
+	+	12	72
+	+	12	9
+	+	12	25
+	+	12	0
+	+	12	0
+	+	12	87
+	+	12	10
+	+	12	8
+	+	12	10
+	+	12	9
+	+	12	9
+	+	12	15
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	12
+	+	12	7
+	+	12	13
+	+	12	11
+	+	12	11
+	+	12	17
+	+	12	47
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	10
+	+	12	17
+	+	80	22
+	+	81	38
+	+	82	24
+	+	81	7
+	+	85	27
+	+	75	0
+	+	50	42
+	+	7	0
+	+	6	10
+	+	5	58
+	+	4	0
+	+	5	0
+	+	50	94
+	+	88	19
+	+	12	0
+	+	13	8
+	+	24	17
+	+	13	9
+	+	10	0
+	+	9	0
+	+	8	0
+	+	9	3
+	+	74	47
+	+	59	19
+
+> ~/Documents/IVC blah/einfÃ¼hrung.tex
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/IVC blah/-MiniBufExplorer-
+	"	1	46
+	.	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+	+	2	0
+
+> ~/Documents/test.pl
+	"	6	0
+
+> ~/Downloads/Mail/Klausurvorbereitung.tex
+	"	125	0
+
+> ~/Dropbox/UniversitaÌˆt/Abschlussarbeiten Template/chapters/titelseite.tex
+	"	1	0
+
+> ~/Downloads/SmallptGPU-v1.6/-MiniBufExplorer-
+	"	1	0
+	.	2	0
+	+	2	0
+	+	2	0
+
+> ~/Library/Application Support/Sparrow/felixgrabowski@me.com.sparrowdb/Cache/INBOX/2970/1/Klausurvorbereitung.tex
+	"	14	0
+
+> ~/Documents/Physik.tex
+	"	1	0
+
+> ~/test.txt
+	"	6	0
+	.	1	0
+	+	1	8
+	+	8	1
+	+	5	0
+	+	1	0
+	+	1	0
+
+> /usr/local/bin/test.txt
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/test2.txt
+	"	1	0
+
+> ~/Downloads/MacVim-snapshot-64/MacVim.app/Contents/Resources/vim/runtime/doc/help.txt
+	"	1	0
+
+> ~/.vim/test.m
+	"	5	16
+	^	5	17
+	.	5	16
+	+	1	21
+	+	7	0
+	+	3	33
+	+	4	0
+	+	5	16
+
+> ~/.vim/filetype.vim
+	"	3	34
+	^	3	35
+	.	3	34
+	+	2	0
+	+	2	35
+	+	3	34
+
+> ~/test.m
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Development/vim/AlfredExtension/Vim-Alfred-Extension/README
+	"	1	89
+	^	1	90
+	.	1	89
+	+	1	89
+
+> ~/Desktop/vim.xml
+	"	5	0
+	^	5	1
+	.	5	0
+	+	4	5
+	+	3	0
+	+	4	0
+	+	5	0
+
+> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/update.xml
+	"	3	12
+	.	3	12
+	+	3	12
+
+> ~/Dropbox/Alfred/extensions/scripts/AlfredTweet/info.plist
+	"	1	0
+
+> ~/Dropbox/Alfred/extensions/applescripts/vim/update.xml
+	"	5	8
+	^	4	43
+	.	3	11
+	+	4	42
+	+	3	11
+
+> ~/Dropbox/Alfred/extensions/applescripts/vim/vim.xml
+	"	5	16
+	^	5	17
+	.	5	16
+	+	1	0
+	+	4	16
+	+	5	16
+
+> ~/NERD_tree_2
+	"	4	9
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/update.xml
+	"	5	8
+	^	5	9
+	.	5	7
+	+	1	1
+	+	2	8
+	+	3	22
+	+	4	56
+	+	5	7
+
+> ~/Documents/BWL Invest/formeln.tex
+	"	1	0
 
 > ~/Documents/Development/latestDSVR/Client/src/CMD_Proxy_ext.cpp
 	"	16	0
@@ -772,59 +1389,6 @@ $
 	.	1	5
 	+	1	5
 
-> ~/.zshrc
-	"	12	0
-	^	12	0
-	.	12	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	10	0
-	+	11	0
-	+	43	63
-	+	19	19
-	+	37	9
-	+	38	0
-	+	11	0
-	+	8	0
-	+	11	0
-	+	43	43
-	+	12	0
-	+	16	0
-	+	13	0
-	+	12	0
-	+	13	0
-	+	12	1
-	+	43	72
-	+	38	0
-	+	13	0
-	+	12	0
-
-> ~/.oh-my-zsh/themes/fukurokujopro.zsh-theme
-	"	1	0
-	.	6	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	17	0
-	+	1	18
-	+	13	6
-	+	31	3
-	+	31	0
-	+	1	57
-	+	9	18
-	+	5	3
-	+	10	7
-	+	9	49
-	+	5	0
-	+	9	36
-	+	8	44
-	+	5	0
-	+	7	45
-	+	5	0
-	+	6	0
-
 > /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329354584
 	"	1	0
 
@@ -848,84 +1412,6 @@ $
 	.	1	0
 	+	1	0
 	+	1	0
-
-> ~/.bash_profile
-	"	16	0
-	^	59	20
-	.	59	19
-	+	1	84
-	+	1	0
-	+	1	29
-	+	1	29
-	+	1	26
-	+	1	29
-	+	1	30
-	+	37	38
-	+	43	0
-	+	38	0
-	+	39	0
-	+	37	0
-	+	2	0
-	+	1	1
-	+	2	0
-	+	12	0
-	+	2	93
-	+	2	93
-	+	2	0
-	+	12	10
-	+	12	20
-	+	12	0
-	+	12	72
-	+	12	9
-	+	12	25
-	+	12	0
-	+	12	0
-	+	12	87
-	+	12	10
-	+	12	8
-	+	12	10
-	+	12	9
-	+	12	9
-	+	12	15
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	12
-	+	12	7
-	+	12	13
-	+	12	11
-	+	12	11
-	+	12	17
-	+	12	47
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	10
-	+	12	17
-	+	80	22
-	+	81	38
-	+	82	24
-	+	81	7
-	+	85	27
-	+	75	0
-	+	50	42
-	+	7	0
-	+	6	10
-	+	5	58
-	+	4	0
-	+	5	0
-	+	50	94
-	+	88	19
-	+	12	0
-	+	13	8
-	+	24	17
-	+	13	9
-	+	10	0
-	+	9	0
-	+	8	0
-	+	9	3
-	+	74	47
-	+	59	19
 
 > ~/Documents/BWL Invest/BWL_Formel.tex
 	"	137	0
@@ -1048,111 +1534,6 @@ $
 	+	2	0
 	+	2	0
 
-> ~/.vimrc
-	"	2	0
-	^	175	0
-	.	175	0
-	+	96	0
-	+	96	0
-	+	187	5
-	+	195	0
-	+	195	0
-	+	195	0
-	+	184	23
-	+	185	22
-	+	182	61
-	+	195	36
-	+	195	0
-	+	112	0
-	+	195	38
-	+	195	44
-	+	195	0
-	+	112	0
-	+	195	0
-	+	114	0
-	+	194	0
-	+	188	37
-	+	189	32
-	+	190	36
-	+	191	41
-	+	192	41
-	+	103	1
-	+	104	0
-	+	100	0
-	+	99	0
-	+	112	0
-	+	114	0
-	+	116	0
-	+	127	0
-	+	192	0
-	+	191	0
-	+	190	0
-	+	189	0
-	+	99	0
-	+	100	0
-	+	103	0
-	+	112	0
-	+	114	0
-	+	116	0
-	+	192	0
-	+	191	0
-	+	190	0
-	+	189	0
-	+	52	0
-	+	6	0
-	+	30	0
-	+	16	8
-	+	10	0
-	+	22	32
-	+	23	28
-	+	24	25
-	+	25	31
-	+	26	33
-	+	27	25
-	+	48	0
-	+	28	8
-	+	31	17
-	+	32	25
-	+	31	25
-	+	35	35
-	+	46	45
-	+	9	39
-	+	46	0
-	+	46	0
-	+	37	12
-	+	44	1
-	+	43	1
-	+	42	0
-	+	41	0
-	+	40	1
-	+	39	1
-	+	38	1
-	+	48	0
-	+	193	33
-	+	177	6
-	+	60	21
-	+	61	11
-	+	63	18
-	+	64	14
-	+	68	12
-	+	70	13
-	+	70	0
-	+	90	0
-	+	90	0
-	+	91	0
-	+	88	0
-	+	89	13
-	+	93	9
-	+	86	44
-	+	94	0
-	+	107	0
-	+	110	0
-	+	109	10
-	+	174	12
-	+	175	53
-	+	176	0
-	+	175	0
-
 > ~/Dropbox/TextExpander/TextExpander Backup 2012-02-15-1452058_29.textexpbackup
 	"	25	0
 
@@ -1176,30 +1557,6 @@ $
 
 > ~/Documents/BWL Invest/vim
 	"	1	0
-
-> ~/test.tex
-	"	1	0
-	.	1	0
-	+	1	2
-	+	1	0
-	+	3	0
-	+	3	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
 > ~/.oh-my-zsh/themes/bira.zsh-theme
 	"	34	43
@@ -1285,274 +1642,3 @@ $
 	^	2	0
 	.	1	90
 	+	1	90
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-125871905076
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim73/doc/usr_42.txt
-	"	356	59
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-62291372225
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-31808671533
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-15374504464
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-8282604411
-	"	1	4
-	^	1	5
-	.	1	4
-	+	1	4
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-3511413515
-	"	1	0
-
-> /private/var/folders/41/wtmbc1hx47q7p_7nn_2l91vm0000gn/T/bash-fc-1329167488
-	"	1	4
-	^	1	5
-	.	1	4
-	+	1	4
-
-> ~/myssession.vim
-	"	1	0
-
-> ~/.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim
-	"	628	0
-
-> ~/test
-	"	1	0
-	^	1	3
-	.	1	1
-	+	2	19
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	2	11
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	9
-	+	2	8
-	+	2	8
-	+	2	6
-	+	1	0
-	+	2	0
-	+	1	1
-
-> ~/test.c
-	"	1	0
-	.	1	0
-	+	1	23
-	+	21	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	15	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	7
-	+	1	0
-
-> /usr/local/share/vim/vim73/doc/quickfix.txt
-	"	304	9
-
-> ~/.vim/.vimrc
-	"	1	0
-
-> ~/.vim/test.c
-	"	1	0
-	^	1	23
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/.vim/test.tex
-	"	1	20
-	^	1	9
-	.	6	0
-	+	1	0
-	+	6	0
-
-> ~/hallo
-	"	1	0
-
-> ~/[Vundle] Installer
-	"	11	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/syntax/snippet.vim
-	"	1	0
-
-> ~/.vim/README.markdown
-	"	1	0
-
-> ~/.vim/plugin-info.txt
-	"	1	0
-
-> ~/.vim/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/NERD_tree_2
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim73/doc/starting.txt
-	"	797	50
-
-> ~/.vim/snippets/c.snippets
-	"	104	0
-	^	113	1
-	.	113	0
-	+	112	0
-	+	113	0
-
-> ~/.vim/ftplugin/html_snip_helper.vim
-	"	1	0
-
-> ~/.vim/autoload/snippets/dummy.vim
-	"	1	0
-
-> ~/.vim/autoload/snippets/clang_complete.vim
-	"	1	0
-
-> ~/Documents/BWL Invest/test.c
-	"	2	17
-	^	2	18
-	.	3	0
-	+	1	0
-	+	2	0
-	+	3	0
-
-> ~/.vim/ultisnips_rep/doc/UltiSnips.txt
-	"	3	68
-
-> ~/.vim/UltiSnips/<cr>.snippets
-	"	1	0
-
-> ~/Documents/test.c
-	"	1	0
-	^	1	0
-	.	1	0
-	+	2	0
-	+	1	0
-
-> ~/Documents/test.tex
-	"	1	1
-	^	1	2
-	.	2	0
-	+	1	2
-	+	2	0
-
-> ~/Documents/Development/latestDSVR/NERD_tree_1
-	"	7	5
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> /usr/local/share/vim/vim73/doc/options.txt
-	"	5038	6

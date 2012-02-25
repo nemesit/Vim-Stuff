@@ -26,6 +26,9 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
+Bundle 'tmallen/transmit-vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'vim-ruby/vim-ruby'
 
 
 "non github reposi example
@@ -56,6 +59,10 @@ set showmode
 " load ftplugins and indent files
 filetype plugin on
 filetype indent on
+
+"indention
+set smartindent
+set autoindent
 
 "Read outside changes
 set autoread
@@ -162,6 +169,10 @@ let g:smartusline_hi_replace = 'guibg=#e454ba guifg=black ctermbg=magenta ctermf
 let g:smartusline_hi_insert = 'guibg=orange guifg=black ctermbg=58 ctermfg=black'
 let g:smartusline_hi_virtual_replace = 'guibg=#e454ba guifg=black ctermbg=magenta ctermfg=black'
 let g:smartusline_hi_normal = 'guibg=#95e454 guifg=black ctermbg=lightgreen ctermfg=black'
+
+"regex stuff
+nnoremap / /\v
+vnoremap / /\v
 
 "whatever this is
 if v:version >= 703
